@@ -1,0 +1,70 @@
+.footer{
+  padding: 2.25rem;
+  background-color: #111;
+  // position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  .info{
+    img {
+      width: 150px;
+      height: 70px;
+    }
+    .companyInfo{
+      p{
+        padding: 0.125rem 0;
+      }
+    }
+  }
+
+  .title{
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 1rem;
+    .call{
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .subtitle{
+    color: #c8c8c8;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0.25rem 0;
+    .mail{
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .products{
+    display: none;
+    .productList{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: baseline;
+    }
+  }
+}
+
+@media screen and (min-width:426px) {
+  .footer{
+    display: flex;
+    justify-content: space-around;
+    .title{
+      padding: 0;
+    }
+    .products{
+      display: block;
+    }
+  }
+}

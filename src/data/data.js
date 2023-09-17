@@ -1,0 +1,1 @@
+export const ProductList = ['Bar-Syrup/Mocktail', 'Fruit Crushes', 'Sharbat & Squash', 'Exotic Products', 'Sauces', 'Culinary Paste'];
