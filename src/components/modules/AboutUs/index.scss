@@ -4,25 +4,51 @@
     background-image: url(../../../images/AboutUsSm.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    .title{
-        color: #FFF;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 700;
-    }
-    .subtitle{
-        p{
+    .container{
+        display: grid;
+        padding: 20px;
+        text-align: start;
+        .title{
             color: #FFF;
-            font-size: 16px;
+            font-size: 2rem;
             font-style: normal;
-            font-weight: 500;
-            line-height: 140%;
+            font-weight: 700;
+        }
+        .subtitle{
+            p{
+                padding: 15px 0;
+                color: #FFF;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 140%;
+            }
+    
+            ul{
+                text-align: start;
+                list-style: inside;
+                li{
+                    color: #FFF;
+                    font-weight: 700;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .imgGroup{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: auto;
+                height: 50vh;
+            }
         }
     }
-    @media screen and (min-width:426px) {
+    
+    @media screen and (min-width:769px) {
         background-image: url(../../../images/AboutUsBgLg.svg);
         .container{
-            width: 50%;
+            grid-template-columns: repeat(2, 1fr);
             padding: 60px;
             .subtitle{
                 text-align: start;

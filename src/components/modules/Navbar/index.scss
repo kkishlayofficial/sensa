@@ -31,6 +31,10 @@
   .nav-item {
     padding: 1rem;
     font-weight: 500;
+    .active{
+      padding-bottom: 12px;
+      border-bottom: 3px solid var(--primary-color);
+    }
     a:hover {
       padding-bottom: 12px;
       border-bottom: 3px solid var(--primary-color);

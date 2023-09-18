@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FaBars, FaTimes } from 'react-icons/fa'
+import {Link} from 'react-scroll'
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx"
 import logo from '../../../images/logo.png'
 
@@ -28,7 +28,7 @@ const Navbar = () => {
                         <a href='/' onClick={closeMenu}>Home</a>
                     </li>
                     <li className='nav-item'>
-                        <a href='#about' onClick={closeMenu}>About</a>
+                        <Link to='about' spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>About</Link>
                     </li>
                     <li className='nav-item'>
                         <a href='#testimonials' onClick={closeMenu}>Testimonials</a>

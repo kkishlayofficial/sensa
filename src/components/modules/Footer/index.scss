@@ -56,7 +56,17 @@
   }
 }
 
-@media screen and (min-width:426px) {
+@media screen and (min-width:426px) and (max-width: 768px) {
+  .footer{
+    display: flex;
+    justify-content: space-around;
+    .title{
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
   .footer{
     display: flex;
     justify-content: space-around;
