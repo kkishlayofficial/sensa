@@ -1,6 +1,9 @@
 import React from 'react'
 import { CategoryList } from '../../../data';
 import ProductImg from '../../../images/AboutUsGroup.svg'
+import Card from '../../elements/Card';
+import './index.scss';
+import { Fade } from 'react-reveal';
 
 const Categories = () => {
   return (
@@ -9,14 +12,11 @@ const Categories = () => {
       <div className="categoryList">
         {CategoryList.map((item, idx) => {
           return(
-            <div key={idx}>
-              <div className="imgContainer">
-                <img src={ProductImg} alt={item}/>
-              </div>
-              <div className="categoryName">
-                {item}
-              </div>
+            <Fade bottom>
+              <div key={idx}>
+              <Card img={ProductImg} title={item} height={'200px'} width={'100%'} type='grey' className='categoryCard'/>
             </div>
+            </Fade>
           )
         })}
       </div>

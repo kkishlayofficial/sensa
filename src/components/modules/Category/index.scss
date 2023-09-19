@@ -1,0 +1,45 @@
+.categories{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title{
+        color: #111;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        width: 100%;
+        text-align: left;
+        padding-left: 50px;
+    }
+    .categoryList{
+        display: grid;
+        grid-template-columns: repeat( 1fr);
+        div{
+            .card{
+                margin: 1rem;
+                &.categoryCard{
+                    .titleContainer{
+                        p{
+                            color:  #00AB59;
+                            font-size: 1.5rem;
+                            font-weight: 700;
+                        }
+                    } 
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 426px) and (max-width:768px) {
+        .categoryList{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media screen and (min-width: 769px) {
+        .categoryList{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
