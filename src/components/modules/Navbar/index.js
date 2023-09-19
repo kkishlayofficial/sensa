@@ -28,7 +28,10 @@ const Navbar = () => {
                         <a href='/' onClick={closeMenu}>Home</a>
                     </li>
                     <li className='nav-item'>
-                        <Link to='about' spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>About</Link>
+                        <a href='/products' onClick={closeMenu}>Products</a>
+                    </li>
+                    <li className='nav-item'>
+                    <Link to='about' spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>About</Link>
                     </li>
                     <li className='nav-item'>
                         <a href='#testimonials' onClick={closeMenu}>Testimonials</a>
