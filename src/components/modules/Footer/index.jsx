@@ -2,7 +2,7 @@ import React from 'react'
 import logo from '../../../images/logo.png'
 import { AiOutlineMail } from "react-icons/ai"
 import { BiPhoneCall } from "react-icons/bi"
-import { ProductList } from '../../../data/data'
+import { CategoryList } from '../../../data'
 import './index.scss'
 const Footer = () => {
   return (
@@ -22,7 +22,7 @@ const Footer = () => {
       <div className='products'>
         <div className="title">Our Products</div>
           <div className="productList">
-            {ProductList.map(item => {
+            {CategoryList.map(item => {
               return (
                 <div className='subtitle'>{ item }</div>
               )

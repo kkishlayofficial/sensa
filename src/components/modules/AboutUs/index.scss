@@ -38,20 +38,25 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            img{
-                width: auto;
-                height: 50vh;
-            }
+            
         }
     }
+
+    @media screen and (min-width: 426px) and (min-width:768px) {
+        background-image: url(../../../images/AboutUsMd.svg);
+    }    
     
     @media screen and (min-width:769px) {
-        background-image: url(../../../images/AboutUsBgLg.svg);
+        background-image: url(../../../images/AboutUsLg.svg);
         .container{
             grid-template-columns: repeat(2, 1fr);
             padding: 60px;
             .subtitle{
                 text-align: start;
+            }
+            img{
+                width: auto;
+                height: 50vh;
             }
         }
     }

@@ -1,11 +1,11 @@
 import React from 'react'
-import { product } from '../../../productList'
+import { ProductList } from '../../../data'
 import './index.scss'
 
 function CardList() {
   return (
     <div className="card-list">
-      {product.map((item) => (
+      {ProductList.map((item) => (
         <div className="card" key={item.id}>
           <img src={item.image} alt={item.name} className="card-image" />
           <div className="card-content">
@@ -19,7 +19,7 @@ function CardList() {
 }
 
 const Products = () => {
-  const productList = product;
+  const productList = ProductList;
   console.log(productList);
   return (
     <div className='container'>
