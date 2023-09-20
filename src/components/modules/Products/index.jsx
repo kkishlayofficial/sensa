@@ -1,34 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { ProductList } from '../../../data'
 import './index.scss'
-
-function CardList() {
-  return (
-    <div className="card-list">
-      {ProductList.map((item) => (
-        <div className="card" key={item.id}>
-          <img src={item.image} alt={item.name} className="card-image" />
-          <div className="card-content">
-            <h2 className="card-title">{item.name}</h2>
-            <p className="card-description">{item.desc}</p>
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-}
+import CategoryFilter from '../Filter';
+import Card from '../../elements/Card';
 
 const Products = () => {
+  const categories = ['Category 1', 'Category 2', 'Category 3']; // Replace with your categories
+  const [filteredCategory, setFilteredCategory] = useState('');
+
+  const handleFilterChange = (category) => {
+    setFilteredCategory(category);
+  };
+  
+  const filteredItems =
+    filteredCategory === ''
+      ? ProductList
+      : ProductList.filter((item) => item.category === filteredCategory);
+
   const productList = ProductList;
   console.log(productList);
   return (
-    <div className='container'>
-      <div>
-        <h1>filter</h1>
-      </div>
-    <div className='cards-container'>
-            <CardList></CardList>
+    <div className='product-container'>
+     <div className="App">
+      <h1>List of Items</h1>
+      <CategoryFilter categories={categories} onFilterChange={handleFilterChange} />
+      {/* <CardList data={filteredItems} /> */}
     </div>
+    {/* <div className='cards-container'>
+            <Card img={} title={item} height={'200px'} width={'100%'} type='grey' className='categoryCard'/>
+    </div> */}
+    {ProductList.map((item)=>{
+      return(
+          <div className='cards-container'>
+            <Card img={item.image} title={item.name} height={'200px'} width={'100%'} type='grey' className='categoryCard'/>
+      </div> 
+      )
+    })}
     </div>
   )
 }

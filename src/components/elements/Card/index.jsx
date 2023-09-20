@@ -3,20 +3,29 @@ import './index.scss'
 const Card = (props) => {
   const { img, title, height, width,subTitle, className, type } = props;
   return (
-    <div className={`card ${className ? className : ''} ${type ? type : ''}`}>
-      {img && <div className="imgContainer">
-        <img src={img} height={height} width={width} alt={title} />
-      </div>}
+    <div className={`card ${className ? className : ""} ${type ? type : ""}`}>
+      {img?.map((item, index) => {
+        return (
+          <img
+            key={index}
+            src={item}
+            alt={title}
+            height={height}
+            width={width}
+            // className="card-image"
+          />
+        );
+      })}
       <div className="titleContainer">
-        <p>{ title }</p>
+        <p>{title}</p>
       </div>
-      {subTitle && 
+      {subTitle && (
         <div className="subTitleContainer">
-          <p>{ subTitle }</p>
+          <p>{subTitle}</p>
         </div>
-      }
+      )}
     </div>
-  )
+  );
 }
 
 export default Card
