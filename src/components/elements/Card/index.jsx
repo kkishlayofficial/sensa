@@ -4,18 +4,19 @@ const Card = (props) => {
   const { img, title, height, width,subTitle, className, type } = props;
   return (
     <div className={`card ${className ? className : ""} ${type ? type : ""}`}>
-      {img?.map((item, index) => {
-        return (
-          <img
-            key={index}
-            src={item}
-            alt={title}
-            height={height}
-            width={width}
-            // className="card-image"
-          />
-        );
-      })}
+      <div className="imgContainer">
+        {img?.map((item, index) => {
+          return (
+            <img
+              key={index}
+              src={item}
+              alt={title}
+              height={height}
+              width={width}
+            />
+          );
+        })}
+      </div>
       <div className="titleContainer">
         <p>{title}</p>
       </div>

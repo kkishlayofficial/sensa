@@ -1,6 +1,6 @@
 .card{
-    padding: 1.25rem 0;
     position: relative;
+    padding: 1.25rem 0;
     width: 250px;
     height: 300px;
     display: flex;
@@ -18,9 +18,8 @@
     .imgContainer{
         width: 100%;
         transition: 0.4s;
-        img {
-            position: absolute;
-        }
+        display: flex;
+        justify-content: center;
         &:hover{
             cursor: pointer;
             transform: translateY(-1rem);
