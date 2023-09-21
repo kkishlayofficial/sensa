@@ -103,7 +103,8 @@ export const ProductList = [
     desc: 'The enchanting aroma and exquisite taste of Sensa Hazelnut, with its luxurious golden colour and nutty flavour is sure to treat you with decadence and delight. This syrup offers a rich and aromatic experience that will elevate all your drinks, hot or cold, to new heights of deliciousness. It’s the perfect way to add a touch of elegance to your cappuccinos and lattes, and it pairs beautifully with chocolate and vanilla for a delectable twist on classic flavours. Savor the warm, nutty notes of this syrup and transform your beverages into a luxurious treat!',
     ingredients: 'Sugar, Water, Contains permitted natural color (E150a) and added flavor (Natural flavoring substances)]',
     applications: 'Cocktails, Mocktails, Milkshakes, Hot Beverages, Cold Coffees',
-    quantity: ''
+    quantity: '',
+    exotic: true,
 },
 {
     category: 'Bar-Syrup/Mocktail',
@@ -138,7 +139,8 @@ export const ProductList = [
     desc: "With a base of gum mixed with various food flavorings, chewing gum comes in a wide range of shapes and flavors. In 1958, France gave us the gift of pink bubble-gum flavored chewing gum, which quickly became an iconic treat enjoyed by people of all ages. Now, with Sensa Bubble Gum, you can add a sweet and nostalgic touch to your favorite hot and cold creations. Elevate your lemonades, frappes, or even martinis with this delicious syrup and let the familiar taste transport you back to carefree childhood days. It's the perfect way to add a fun twist to your beverages and rediscover the magic of this beloved flavor. So go ahead, indulge in the sweet nostalgia of bubble-gum, and let your taste buds dance with joy!",
     ingredients: 'Sugar, Water, Contains permitted synthetic food color (E124) and added flavor (Nature identical flavoring substances).',
     applications: 'Frappes, Smoothies, Mocktails, Cocktails, Milk Shakes, Ice Teas',
-    quantity: ''
+    quantity: '',
+    exotic: true,
 },
 {
     category: 'Bar-Syrup/Mocktail',
@@ -174,7 +176,8 @@ export const ProductList = [
     desc: 'Fruit Beer Syrup is a versatile syrup formulated to hold up in heat and resist curdling in dairy products. It blends well into smoothies, sodas, mocktails and teas- so you become a pro bartender right in the comforts of your home.',
     ingredients: 'Sugar, Water, Contains added flavors (Nature identical flavoring substances)]',
     applications: 'Cocktails, Mocktails, Iced Teas, Lemonades',
-    quantity: ''
+    quantity: '',
+    exotic: true,
 },
 {
     category: 'Bar-Syrup/Mocktail',
@@ -245,7 +248,8 @@ export const ProductList = [
     desc: 'It is made with real fruit pulp to let you enjoy the wholesome benefits of real fruits that are rich in minerals, vitamins, fiber, and antioxidants. The delightful blend of multiple fruits provides several health benefits, right from mental to physical well-being.',
     ingredients: 'Sugar, Water, Pappaya  Pulp(11.7%), Apple Pulp(5.3%), Pineapple Pulp(4.2%), Banana Pulp(2.5%),Mango Pulp(1.8%), Pectin, acidity regulator, preservative and permitted colors and flavor.',
     applications: 'Ice-lolly, slush, Mousse, Muffins, Beverage and more',
-    quantity: ''
+    quantity: '',
+    exotic: true,
 },
 {
     category: 'Fruit Crushes',
@@ -271,7 +275,8 @@ export const ProductList = [
     desc: 'From our very own roots, we have brought a combination of different indian ingredients such as saunf, Elaichi, Pan leaves to create an authentic experience for the customer so they can relish the joy they have while having a real one.',
     ingredients: 'Sugar, Water, Rose Extract(12%), Pan Extract(10%), Aniseeds, Coriander, Dry dates, Pan petal, Acidity Regulator (INS-330),Thickener (INS-440)',
     applications: 'Ice-lolly, slush, Mousse, Muffins, Beverage, shakes',
-    quantity: ''
+    quantity: '',
+    exotic: true,
 },
 {
     category: 'Sauces',

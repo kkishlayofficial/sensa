@@ -9,11 +9,23 @@
     }
     .products{
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(1fr);
       .cards-container{
         .card{
             margin: 1rem;
         }
       }
     }
+
+    @media screen and (min-width: 426px) and (max-width:768px) {
+      .products{
+          grid-template-columns: repeat(2, 1fr);
+      }
+  }
+
+  @media screen and (min-width: 769px) {
+      .products{
+          grid-template-columns: repeat(3, 1fr);
+      }
+  }
 }

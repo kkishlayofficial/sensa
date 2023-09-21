@@ -34,8 +34,8 @@ const Footer = () => {
         <div className="subtitle">For any queries mail us at</div>
         <div className="subtitle"><a className='mail' href="mailto:nandiniinternational@gmail.com"><AiOutlineMail size={30} />nandiniinternational@gmail.com</a></div>
         <div className="subtitle">Call at</div>
-        <div className="title"><a class="call" href="tel:9810565200" title="CLICK TO DIAL - Mobile Only"><BiPhoneCall size={30} />9810565200</a></div>
-        <div className="title"><a class="call" href="tel:8826406306" title="CLICK TO DIAL - Mobile Only"><BiPhoneCall size={30} />8826406306</a></div>
+        <div className="title"><a className="call" href="tel:9810565200" title="CLICK TO DIAL - Mobile Only"><BiPhoneCall size={30} className='buzz-out-on-hover wave'/>9810565200</a></div>
+        <div className="title"><a className="call" href="tel:8826406306" title="CLICK TO DIAL - Mobile Only"><BiPhoneCall size={30} className='buzz-out-on-hover wave'/>8826406306</a></div>
       </div>
     </div>
   )
