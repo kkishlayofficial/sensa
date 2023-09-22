@@ -1,60 +1,43 @@
 .product-container{
-  .fade-enter {
-    opacity: 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-top: 100px;
+  .filter-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
   }
-  
-  .fade-enter-active {
-    opacity: 1;
-    transition: opacity 500ms;
-  }
-  
-  .fade-exit {
-    opacity: 1;
-  }
-  
-  .fade-exit-active {
-    opacity: 0;
-    transition: opacity 500ms;
-  }
+  .products{
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    margin-top: 100px;
-    .filter-container{
-      display: flex;
-      flex-direction: column;
-      margin-top: 150px;
-    }
-    .products{
-      display: grid;
-      grid-template-columns: repeat(1fr);
-      .cards-container{
-        .card{
-            margin: 1rem;
-            .titleContainer{
-              color: #212121;
-              font-size: 18px;
-              font-style: normal;
-              font-weight: 700;
-            }
-            .subTitleContainer{
-              color: var(--neutrals-02, #9F9F9F);
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 400;
-            }
+    grid-template-columns: repeat(1fr);
+    .cards-container{
+      .card{
+        margin: 1rem;
+        .titleContainer{
+          color: #212121;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+        }
+        .subTitleContainer{
+          color: var(--neutrals-02, #9F9F9F);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
         }
       }
     }
+  }
 
-    @media screen and (min-width: 426px) and (max-width:768px) {
-      .products{
-          grid-template-columns: repeat(2, 1fr);
-      }
+  @media screen and (min-width: 426px) and (max-width:768px) {
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   @media screen and (min-width: 769px) {
-      .products{
-          grid-template-columns: repeat(3, 1fr);
-      }
+    .products{
+        grid-template-columns: repeat(3, 1fr);
+    }
   }
 }
