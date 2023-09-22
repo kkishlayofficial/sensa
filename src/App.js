@@ -1,20 +1,22 @@
-import './App.css';
-import AboutUs from './components/modules/AboutUs';
-import Categories from './components/modules/Category';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Footer from './components/modules/Footer';
-import Navbar from './components/modules/Navbar'
+import Navbar from './components/modules/Navbar';
 import Products from './components/modules/Products';
+import Dashboard from './components/modules/Dashboard';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Navbar />
-      <Products/>
-      <Categories/>
-      <AboutUs/>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route exact path="/home" element={<Dashboard />} />
+        <Route path="/products" element={<Products />} />
+      </Routes>
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

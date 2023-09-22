@@ -4,6 +4,7 @@ import ProductImg from '../../../images/AboutUsGroup.svg'
 import Card from '../../elements/Card';
 import './index.scss';
 import { Fade } from 'react-reveal';
+import { HashLink as Link } from 'react-router-hash-link'; // Import HashLink
 
 const Categories = () => {
   return (
@@ -14,8 +15,10 @@ const Categories = () => {
           return(
             <Fade bottom>
               <div key={idx}>
-              <Card img={[ProductImg]} title={item} height={'200px'} width={'100%'} type='grey' className='categoryCard'/>
-            </div>
+                <Link to={`/products?category=${item}`}>
+                  <Card img={[ProductImg]} title={item} height={'200px'} width={'100%'} type='grey' className='categoryCard'/>
+                </Link>
+              </div>
             </Fade>
           )
         })}

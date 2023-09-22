@@ -4,6 +4,7 @@ import { AiOutlineMail } from "react-icons/ai"
 import { BiPhoneCall } from "react-icons/bi"
 import { CategoryList } from '../../../data'
 import './index.scss'
+import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <div className='footer'>
@@ -24,7 +25,9 @@ const Footer = () => {
           <div className="productList">
             {CategoryList.map(item => {
               return (
-                <div className='subtitle'>{ item }</div>
+                <Link to={`/products?category=${item}`}>
+                  <div className='subtitle'>{ item }</div>
+                </Link>
               )
             })}
         </div>
