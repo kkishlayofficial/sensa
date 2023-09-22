@@ -1,29 +1,35 @@
 import React, { useState } from 'react';
 
 function CategoryFilter({ categories, onFilterChange }) {
-  const [selectedCategory, setSelectedCategory] = useState('');
+  const [selectedCategories, setSelectedCategories] = useState([]);
 
-  const handleCategoryChange = (e) => {
-    const category = e.target.value;
-    setSelectedCategory(category);
-    onFilterChange(category);
+  const handleCategoryChange = (category) => {
+    let updatedCategories;
+    
+    if (selectedCategories.includes(category)) {
+      updatedCategories = selectedCategories.filter((c) => c !== category);
+    } else {
+      updatedCategories = [...selectedCategories, category];
+    }
+
+    setSelectedCategories(updatedCategories);
+    onFilterChange(updatedCategories); // Notify the parent component of the selected categories
   };
 
   return (
     <div className="category-filter">
-      <label htmlFor="category">Filter by Category:</label>
-      <select
-        id="category"
-        value={selectedCategory}
-        onChange={handleCategoryChange}
-      >
-        <option value="">All</option>
-        {categories.map((category) => (
-          <option key={category} value={category}>
-            {category}
-          </option>
-        ))}
-      </select>
+      <h2>Filter by Category:</h2>
+      {categories.map((category) => (
+        <label key={category}>
+          <input
+            type="checkbox"
+            value={category}
+            checked={selectedCategories.includes(category)}
+            onChange={() => handleCategoryChange(category)}
+          />
+          {category}
+        </label>
+      ))}
     </div>
   );
 }

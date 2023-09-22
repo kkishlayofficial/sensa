@@ -44,12 +44,12 @@ export const CategoryList = ['Bar-Syrup/Mocktail', 'Fruit Crushes', 'Sharbat & S
 export const ProductList = [
 {
     category: 'Bar-Syrup/Mocktail',
-    image: [mojitoMint,mojitoMint750],
+    image: [mojitoMint750,mojitoMint],
     name: 'Mojito Mint',
     desc: 'Dive in the refreshing taste of mint without the hassle of infusing leaves, with Sensa Mojito Mint. This natural flavouring will elevate your cocktail  and help you create delightful virgin drinks in no time.The versatility of Sensa Mojito Mint is unmatched as it can enhance various beverages. It’s the perfect addition to your bar or kitchen, enabling you to unleash your creativity and impress your guests with a burst of fresh minty flavour.',
     ingredients: 'Sugar, Water. Contains Mint Extract. [Contains added flavor (Natural flavoring substances)]',
     applications: 'Cocktails, Mocktails, Iced Lattes',
-    quantity: ''
+    quantity: '750ml,1ltr'
 },
 {
     category: 'Bar-Syrup/Mocktail',
@@ -58,7 +58,7 @@ export const ProductList = [
     desc: 'Blue Curaçao, a timeless classic cocktail ingredient, is known for its stunning blue hue, tangy orange flavor, and tropical essence. The mesmerizing deep blue of Sensa Blue Curaçao mirrors the gentle flow of the ocean along the stunning Curacao beaches. Its orange peel aroma and delectable bitterness add an exotic element to cocktails and sodas, elevating your senses to a world of vibrant flavors.',
     ingredients: 'Sugar, Water, Contains permitted synthetic food color (E133) and added flavors (Natural and nature identical flavoring substances)',
     applications: 'Cocktails, Mocktails, Iced Teas, Lemonades',
-    quantity: ''
+    quantity: '750ml,1ltr'
 },
 {
     category: 'Bar-Syrup/Mocktail',
@@ -67,7 +67,7 @@ export const ProductList = [
     desc: "Sensa Watermelon is a sweet and juicy syrup made from premium quality ingredients. It has a vibrant, fresh watermelon flavor that makes it a popular choice for cocktails, lemonades, and mocktails. It is easy to mix and dispense, and its bright red color adds an attractive visual appeal to drinks. Whether you're looking to add a touch of summer to your beverages or create a new signature drink, Sensa Watermelon is an excellent choice.",
     ingredients: 'Sugar, Water, Contains permitted synthetic food color (E124) and added flavors (Nature identical flavoring substances)',
     applications: 'Lemonades, Iced Teas, Martinis, Coolers',
-    quantity: ''
+    quantity: '750ml,1ltr'
 },
 {
     category: 'Bar-Syrup/Mocktail',
@@ -76,7 +76,7 @@ export const ProductList = [
     desc: 'The green apple is a vibrant and refreshing fruit that has been enjoyed for centuries. From its crisp and firm texture to its sour and juicy taste, it is a favourite in the world of pastry and baking. It pairs beautifully with a variety of flavours, including wild strawberry, cinnamon, and mint, as well as dried fruits. Sensa Green Apple captures the essence of this delightful fruit, providing a refreshing touch of tartness to all of your alcoholic or non-alcoholic creations. Mix it with green tea for a revitalizing pick-me-up, add it to lemonade for a crisp and tangy twist, or try it in a Ginger Gin Fizz for a unique and invigorating beverage. The possibilities are endless with Sensa Green Apple.',
     ingredients: 'Sugar, Water, Acidity Regulator: Citric Acid [Contains permitted synthetic food colors (E102, E133) and added flavor (Nature identical flavoring substances)]',
     applications: 'Cocktails, Mocktails, Iced Teas, Lemonades',
-    quantity: ''
+    quantity: '750ml,1ltr'
 },
 {
     category: 'Bar-Syrup/Mocktail',
@@ -85,7 +85,7 @@ export const ProductList = [
     desc: "Imagine the cooling breeze of a lush garden on a warm summer day, and you'll find yourself in the company of green mint. With its refreshing properties, it has been a cherished ingredient since forever.Sensa Green Mint captures the bold emerald colour and the refreshing, peppery taste of this prized herb. It brings a burst of freshness to all your creations, whether you're crafting a hot chocolate, mocha, soda, lemonade or frappé. Experience the crispness of Sensa Green Mint and let your taste buds dance in delight.",
     ingredients: 'Sugar, Water, Contains permitted synthetic food colors (E102, E133) and added flavors (Natural flavoring substances)',
     applications: 'Cocktails, Mocktails, Iced Teas, Lemonades',
-    quantity: ''
+    quantity: '750ml,1ltr'
 },
 {
     category: 'Bar-Syrup/Mocktail',
@@ -94,7 +94,7 @@ export const ProductList = [
     desc: "Lately, grenadine syrup is a blend of red fruits that offer a taste and hue reminiscent of its namesake fruit. The beautiful red hue and sweet notes with a hints of sourness make it the perfect ingredient for both cocktails and mocktails. Take your favorite drinks up a notch, or add a twist to classic cocktails like a Tequila Sunrise or a Planter's Punch.",
     ingredients: 'Sugar, Water, Acidity Regulator: Citric Acid, Contains permitted natural  (E150a) and synthetic (E122) food colors and added flavor (Natural flavoring substances)]',
     applications: 'Cocktails, Mocktails, Iced Teas, Lemonades',
-    quantity: ''
+    quantity: '750ml,1ltr'
 },
 {
     category: 'Bar-Syrup/Mocktail',
@@ -103,7 +103,7 @@ export const ProductList = [
     desc: 'The enchanting aroma and exquisite taste of Sensa Hazelnut, with its luxurious golden colour and nutty flavour is sure to treat you with decadence and delight. This syrup offers a rich and aromatic experience that will elevate all your drinks, hot or cold, to new heights of deliciousness. It’s the perfect way to add a touch of elegance to your cappuccinos and lattes, and it pairs beautifully with chocolate and vanilla for a delectable twist on classic flavours. Savor the warm, nutty notes of this syrup and transform your beverages into a luxurious treat!',
     ingredients: 'Sugar, Water, Contains permitted natural color (E150a) and added flavor (Natural flavoring substances)]',
     applications: 'Cocktails, Mocktails, Milkshakes, Hot Beverages, Cold Coffees',
-    quantity: '',
+    quantity: '1ltr',
     exotic: true,
 },
 {
@@ -113,7 +113,7 @@ export const ProductList = [
     desc: 'A true powerhouse of nutrition, rich in vitamins and minerals. This refreshing fruit packs a delightful punch when combined with chocolate, vanilla, citrus or red fruits. Allow Sensa Passion Fruit to introduce an invigorating zesty note to your beverage creations. From a unique take on the classic Mojito, to a refreshing Spritz, a luscious fruit smoothie, an iced tea, or even the exotic Maï Taï - this syrup is the perfect addition to take your drinks to the next level.',
     ingredients: 'Sugar, Water, Contains permitted natural (E150a) and synthetic (E102) food colors and added flavor (Natural flavoring substances)',
     applications: 'Cocktails, Mocktails, Iced Teas, Lemonades',
-    quantity: ''
+    quantity: '750ml,1ltr'
 },
 {
     category: 'Bar-Syrup/Mocktail',
@@ -122,7 +122,7 @@ export const ProductList = [
     desc: "Born in the lush forests of Asia, the peach has captivated our taste buds since its discovery in the 15th century. With over 300 varieties to choose from, including the aromatic yellow, the succulent white, the juicy vine, and the tangy nectarine, this summer fruit is an irresistible addition to anything. Sensa Peach captures the essence of this delightful fruit, with its natural sweetness and subtle tartness, making it the perfect ingredient to elevate your drinks. Its beautiful golden orange color adds a touch of warmth and sunshine to any beverage, while its deliciously sweet taste will beautifully complement white wines, vodka, and rum. Whether you're sipping on iced tea, smoothies, or virgin cocktails, Sensa Peach is sure to delight your taste buds with its juicy and refreshing flavor.",
     ingredients: '  Sugar, Water, Acidity Regulator: Citric Acid,  [Contains permitted natural color (E150a) and added flavors (Natural flavoring substances)]',
     applications: 'Cocktails, Mocktails, Iced Teas, Lemonades',
-    quantity: ''
+    quantity: '1ltr'
 },
 {
     category: 'Bar-Syrup/Mocktail',
@@ -131,7 +131,7 @@ export const ProductList = [
     desc: 'It is widely known for its vibrant colour and refreshing, tangy taste. We now invite you to indulge in the magnificent taste of Sensa Blood Orange - a sweet symphony of fruity and zesty notes that perfectly balance the sweet, sour, and bitter flavours. This syrup is the perfect addition to your culinary creations, adding an intense twist that will treat your taste buds and take you on a journey to the Mediterranean.',
     ingredients: 'Sugar, Water, Acidic Regulator: Citric Acid, Contains Natural Flavouring Substances',
     applications: 'Cocktails, Mocktails, Iced Teas, Lemonades',
-    quantity: ''
+    quantity: '750ml,1ltr'
 },
 {
     category: 'Bar-Syrup/Mocktail',
@@ -139,7 +139,7 @@ export const ProductList = [
     desc: "With a base of gum mixed with various food flavorings, chewing gum comes in a wide range of shapes and flavors. In 1958, France gave us the gift of pink bubble-gum flavored chewing gum, which quickly became an iconic treat enjoyed by people of all ages. Now, with Sensa Bubble Gum, you can add a sweet and nostalgic touch to your favorite hot and cold creations. Elevate your lemonades, frappes, or even martinis with this delicious syrup and let the familiar taste transport you back to carefree childhood days. It's the perfect way to add a fun twist to your beverages and rediscover the magic of this beloved flavor. So go ahead, indulge in the sweet nostalgia of bubble-gum, and let your taste buds dance with joy!",
     ingredients: 'Sugar, Water, Contains permitted synthetic food color (E124) and added flavor (Nature identical flavoring substances).',
     applications: 'Frappes, Smoothies, Mocktails, Cocktails, Milk Shakes, Ice Teas',
-    quantity: '',
+    quantity: '750ml',
     exotic: true,
 },
 {
@@ -149,7 +149,7 @@ export const ProductList = [
     desc: 'Break past the tough and spiky armour of the tropically delightful pineapple and experience the flavours of the sweet and succulent golden fruit. Relish the refreshing taste of sweet pineapple with honey notes in an array of beverage and culinary creations.',
     ingredients: 'Sugar, Water, Contains permitted synthetic food color (E124) and added flavor (Nature identical flavoring substances).]',
     applications: 'Frappes, Smoothies, Mocktails, Cocktails, Milk Shakes, Ice Teas',
-    quantity: ''
+    quantity: '1ltr'
 },
 {
     category: 'Bar-Syrup/Mocktail',
@@ -158,7 +158,7 @@ export const ProductList = [
     desc: "Imagine a warm spring day, where the air is filled with the sweet aroma of strawberries. And now, you can experience the taste of this delightful fruit in a whole new way, thanks to Sensa Strawberry. Crafted to capture the sweet, delicious, and fresh flavour of the strawberry, this syrup is the perfect addition to any drink, whether you prefer an alcoholic or non-alcoholic beverage. With just one sip, you'll be transported to a world of pure bliss, where the taste of ripe strawberries dances on your tongue. If you're looking to elevate your lemonades, milkshakes, frozen cocktails, spritzers or margaritas, Sensa Strawberry is the perfect ingredient. Its versatility allows it to be paired with a variety of ingredients such as pepper, mint, basil, vanilla, chocolate, and other fruits, offering you endless possibilities to experiment and delight your senses. So go ahead and indulge in the sweetness of the strawberry and discover a world of endless flavour possibilities with each and every sip of Sensa Strawberry.",
     ingredients: 'Sugar, Water, Acidity Regulator: Citric Acid [Contains permitted synthetic food color (E122) and added flavor (Natural flavoring substances)]',
     applications: 'Cocktails, Mocktails, Iced Teas, Lemonades',
-    quantity: ''
+    quantity: '750ml,1ltr'
 },
 {
     category: 'Bar-Syrup/Mocktail',
@@ -167,7 +167,7 @@ export const ProductList = [
     desc: "The exotic lychee fruit has been revered as a symbol of joy and abundance, especially during the festive Chinese New Year celebrations. With its luscious rose-colored skin adorned with scales and its delicate white flesh, the lychee is a refreshing treat that pairs perfectly with other tropical fruits, making it a staple ingredient in the world of cocktails. Sensa Lychee is a sweet indulgence, bursting with fresh rose flavors that will elevate all of your creations. The subtle sweetness of this syrup adds a touch of luxury to any beverage, whether it's a classic Rum Collins, a fruity iced tea, or a refreshing smoothie. As you savor the delectable taste of lychee, let your mind wander to a far-off land of exotic flavors and enchanting scents, where every sip brings a wave of relaxation and bliss.",
     ingredients: 'Sugar, Water, Contains added flavors (Nature identical flavoring substances)]',
     applications: 'Cocktails, Mocktails, Iced Teas, Lemonades, Milkshakes',
-    quantity: ''
+    quantity: '1ltr'
 },
 {
     category: 'Bar-Syrup/Mocktail',
@@ -176,7 +176,7 @@ export const ProductList = [
     desc: 'Fruit Beer Syrup is a versatile syrup formulated to hold up in heat and resist curdling in dairy products. It blends well into smoothies, sodas, mocktails and teas- so you become a pro bartender right in the comforts of your home.',
     ingredients: 'Sugar, Water, Contains added flavors (Nature identical flavoring substances)]',
     applications: 'Cocktails, Mocktails, Iced Teas, Lemonades',
-    quantity: '',
+    quantity: '1ltr',
     exotic: true,
 },
 {
@@ -185,7 +185,7 @@ export const ProductList = [
     desc: "What if the velvety richness of chocolate could take you on a journey of pure bliss! Whether you prefer to dip, drizzle, chew, stir, or squeeze, there's no denying that chocolate is the ultimate delight for your senses. Experience the decadent smoothness of Sensa Dark Chocolate sauce, and discover a new world of taste. With its heavenly flavor, this luscious sauce is the perfect addition to any drink, dessert, salty snack or fruit. Let your imagination run wild and elevate your culinary creations to new heights. Whether you're making desserts, ice cream, cocoa, or coffee drinks, Sensa Dark Chocolate sauce is the ultimate ingredient, topping, or drizzle. Savor the sweetness and let it soothe your soul.",
     ingredients: '',
     applications: 'Coffees, Hot Beverages, Smoothies, Frappes',
-    quantity: ''
+    quantity: '1ltr'
 },
 {
     category: 'Fruit Crushes',
@@ -194,16 +194,16 @@ export const ProductList = [
     desc: 'The right blend of sweetness adds up the great taste with  Strawberry Crush. The strawberry controls your sweet starvation aptly. Take the mouthwatering crush at any time in the day to keep your stomach light and healthy. Adding some more flavor with ice can be great for children’s choice and desire.',
     ingredients: 'Water, Sugar, Strawberry pulp(25%), Acidity regulator, preservatives and permitted colors and flavors.',
     applications: 'Smoothies, Ice cream topping, Milkshakes, Cheesecakes, Mousse and more.',
-    quantity: ''
+    quantity: '750ml,1ltr'
 },
 {
     category: 'Fruit Crushes',
-    name: 'Pineapple crush',
+    name: 'Pineapple Crush',
     image: [pineappleCrush],
     desc: 'Resuscitate the taste of pineapple in the form of crush. The Pineapple Crush leaves the aroma of fresh fruit along with the fine pulp which adds more taste to your buds. If you are for tangy and sweet taste, this is what you have. With all the goodness of pineapple, this crush can be your forever drink.',
     ingredients: 'Sugar, Water, Pineapple Pulp(25%), Pectin, acidity regulator, preservative and permitted colors and flavor.',
     applications: 'Smoothies, Ice cream topping, Milkshakes, Shrikhand, Mousse, Lassi, cakes, Muffins and more.',
-    quantity: ''
+    quantity: '750ml,1ltr'
 },
 {
     category: 'Fruit Crushes',
@@ -212,7 +212,7 @@ export const ProductList = [
     desc: 'Our Butterscotch Flavoured Apple Crush is a great taste carrier. This drink blends in the mouth leaving the flavor of butterscotch with apple. So, have it in addition to your sundaes, cakes and ice-creams.',
     ingredients: 'Water, Sugar, Apple pulp (25%), Pectin, Acidity regulator, Preservative and permitted colors and flavors.',
     applications: 'Smoothies, Ice cream topping, Milkshakes, Cheesecakes, Mousse and more.',
-    quantity: ''
+    quantity: '750ml,1ltr'
 },
 {
     category: 'Fruit Crushes',
@@ -221,7 +221,7 @@ export const ProductList = [
     desc: 'It adds a great taste of fresh mango which is loved by all. Enjoy the taste with your mouth-watering smoothies to add on a delightful flavor according to your choice. It leaves the taste of ripped mango which will make you content.',
     ingredients: 'Water, sugar, mango pulp (25%), acidity regulator, preservative and permitted colors and flavor.',
     applications: 'Smoothies, Ice cream topping, Milk shakes, Cheese cakes, Mousse, yoghurt, Cakes, Lassi, Tart, Truffle and more.',
-    quantity: ''
+    quantity: '750ml,1ltr'
 },
 {
     category: 'Fruit Crushes',
@@ -230,7 +230,7 @@ export const ProductList = [
     desc: 'Kiwi being the exotic fruit carries the goodness of all antioxidants, vitamins, and essential minerals which are much needed for all age types. This crush is blended with the goodness of nature. Being a functional drink it can be served with ice-cream, can be used in smoothies or any dessert you like.',
     ingredients: 'Water, Sugar, Kiwi pulp (25%), Acidity regulator, Preservative and permitted colors, and Flavor.',
     applications: 'Lemonades, Ice cream topping, Milk shakes, Shrikand, Mousse, cakes, Ice lollies, Muffins and more.',
-    quantity: ''
+    quantity: '750ml,1ltr'
 },
 {
     category: 'Fruit Crushes',
@@ -239,7 +239,7 @@ export const ProductList = [
     desc: 'The splendid taste of orange pulp with the fresh flavor of the fruit is what orange crush is all about. A blend of sugary syrup is going to tempt your taste buds with tang. This crush is a must to have with ice-cream or can be topped on cake or pastry.',
     ingredients: 'Sugar, Water, Orange Pulp (25%), Pectin, acidity regulator, preservative and permitted colors and flavor.',
     applications: 'Ice-lolly, slush, Mousse, Muffins, Beverage and more.',
-    quantity: ''
+    quantity: '750ml,1ltr'
 },
 {
     category: 'Fruit Crushes',
@@ -248,7 +248,7 @@ export const ProductList = [
     desc: 'It is made with real fruit pulp to let you enjoy the wholesome benefits of real fruits that are rich in minerals, vitamins, fiber, and antioxidants. The delightful blend of multiple fruits provides several health benefits, right from mental to physical well-being.',
     ingredients: 'Sugar, Water, Pappaya  Pulp(11.7%), Apple Pulp(5.3%), Pineapple Pulp(4.2%), Banana Pulp(2.5%),Mango Pulp(1.8%), Pectin, acidity regulator, preservative and permitted colors and flavor.',
     applications: 'Ice-lolly, slush, Mousse, Muffins, Beverage and more',
-    quantity: '',
+    quantity: '750ml,1ltr',
     exotic: true,
 },
 {
@@ -258,7 +258,7 @@ export const ProductList = [
     desc: 'Taste the berriness and fruitiness of our delicious black currant crush. This perfect mix of sweet and tanginess will cheer you up for whatever comes your way',
     ingredients: 'Sugar, Black Currant Pulp (25%), Water, Acidity Regulator (INS-330), Thickener (INS-440)',
     applications: 'Ice-lolly, slush, Mousse, Muffins, Beverage and more',
-    quantity: ''
+    quantity: '750ml,1ltr'
 },
 {
     category: 'Fruit Crushes',
@@ -266,7 +266,7 @@ export const ProductList = [
     desc: 'Litchis are known for their bright red colour and sweet flavour, both of which make them a perfect ingredient in our litchi crush drink. Using this product on a dessert or to add a refreshing twist to beverages will certainly delight your taste buds.',
     ingredients: 'Sugar, Litchi Pulp (25%), Water, Acidity Regulator (INS-330), Thickener (INS-440)',
     applications: 'Ice-lolly, slush, Mousse, Muffins, Beverage and more',
-    quantity: ''
+    quantity: '750ml,1ltr'
 },
 {
     category: 'Fruit Crushes',
@@ -275,7 +275,7 @@ export const ProductList = [
     desc: 'From our very own roots, we have brought a combination of different indian ingredients such as saunf, Elaichi, Pan leaves to create an authentic experience for the customer so they can relish the joy they have while having a real one.',
     ingredients: 'Sugar, Water, Rose Extract(12%), Pan Extract(10%), Aniseeds, Coriander, Dry dates, Pan petal, Acidity Regulator (INS-330),Thickener (INS-440)',
     applications: 'Ice-lolly, slush, Mousse, Muffins, Beverage, shakes',
-    quantity: '',
+    quantity: '750ml',
     exotic: true,
 },
 {
@@ -340,11 +340,51 @@ export const ProductList = [
     quantity: '300gm, 1kg'
 },
 {
-    category: 'Culinary Paste',
-    name: 'Ginger-Garlic Paste Mix Paste',
-    desc: 'This Mix Paste is creation of Both Ginger and Garlic Paste. Both added in a mix 50:50 ratio. You  can always pick this reciepe from our list of products you want. It is always more handy for all of us. ',
-    ingredients: '',
-    applications: 'It can be used as an ingredient where you have to use both ginger and garlic jointly.',
-    quantity: '300gm, 1kg'
+    category: 'Sharbat & Squash',
+    name: 'Rose Sharbat',
+    desc: 'Made from real rose petals, this sharbat is ideally blends with puddings and ice-creams.',
+    ingredients: 'Sugar, Water, Rose water, Preservatives(INS 211), Rose petals, Acidity Regulator(INS 330), Color (INS 122)',
+    applications: 'It is a widely accepted product &amp; can be used in kheer, Ice-creams, shakes',
+    quantity: '750ml'
 },
+{
+    category: 'Sharbat & Squash',
+    name: 'Khus Sharbat',
+    desc: 'Sensa Shahi Sharbat Khus is a sweet, refreshing and soothing beverage madefrom the extracts of pure khus roots, which is known for its musky taste and cooling properties.',
+    ingredients: 'Sugar, Water, Khus water, khus extract Preservative (INS 211), Acidity Regulator(INS 330), Color (INS 102 &amp; 133)',
+    applications: 'It is a widely accepted product &amp; can be used in kheer, Ice-creams, shakes',
+    quantity: '750ml'
+},
+{
+    category: 'Sharbat & Squash',
+    name: 'Aam Panna',
+    desc: 'Sensa Aam Panna is a delicious and beneficial raw mango beverage that offersa tangy and sweet taste as well as it can fight the heat strokes as well',
+    ingredients: 'Sugar, Water, Raw mango pulp (20%), lemon juice (5%), spices condiments ,thickener (INS 415) , salt, Preservative (INS 330), Acidity Regulator (INS 211 &amp; INS224), Color(INS 102 &amp; INS 133)',
+    applications: 'Simply mix one part of the syrup with four parts of club soda, stir, and serve for asatisfying and revitalizing drink.',
+    quantity: '750ml'
+},
+{
+    category: 'Sharbat & Squash',
+    name: 'Lemon Squash',
+    desc: 'Sensa Lemon squash is a traditional remedy to fight from the scorching heat and perfect for saving you from dehydration. It is produced from the juice of carefully selected organic lemons. It is enriched with antioxidant properties and is a naturalhealth restorer. It improves digestion and blood circulation providing the body amuch-needed boost.',
+    ingredients: 'Sugar, Water, lemon juice (25%), Preservative (INS 211 &amp; 224), Acidity Regulator(INS 330), Thickener (INS 415), Color(INS 102)',
+    applications: 'Simply mix one part of the syrup with four parts of club soda, stir, and serve for asatisfying and revitalizing drink',
+    quantity: '750ml'
+},
+{
+    category: 'Sharbat & Squash',
+    name: 'Khatta Meetha Orange',
+    desc: 'Every sip of Sensa Juicy Orange Squash is enriched with the goodness of Fruit Vitamins A, B, and C. Our Orange Squash has more fruit juice in every sip ascompared to Leading Instant Drink Mix. Enjoy the deliciously refreshing Orange taste with water or soda.',
+    ingredients: 'Sugar, Water, orange juice (25%), Preservative (INS 211 &amp; INS 224), AcidityRegulator (INS 330), Thickener (INS 415), color (INS 110)',
+    applications: 'Simply mix one part of the syrup with four parts of club soda, stir, and serve for asatisfying and revitalizing drink.',
+    quantity: '750ml'
+},
+{
+    category: 'Sharbat & Squash',
+    name: 'Chatpata Jeera',
+    desc: 'From boosting digestion and staying hydrated to treating anemia naturally and weightloss, Chatpata jeera sharbat has many benefits. It’s rich in Vitamin E and also contains anti-inflammatory properties.Sensa Chatpata Jeera Treat has a strong and invigorating flavor and aroma which freshens you during the summer season. It helps in keeping the body cool and boosts digestion. A perfect drink for a hot summer day with a lasting tingling effect on the taste buds. Stay energetic and active all day long',
+    ingredients: 'Sugar, Water, Fruit Pulp (20%), lemon Juice (5%), Cumin Seeds, Spices, condiments,Thickener (INS 415), salt, Preservative (INS 211 &amp; INS 224), Acidity Regulator (INS330), Colors (INS 150d )',
+    applications: 'Simply mix one part of the syrup with four parts of club soda, stir, and serve for asatisfying and revitalizing drink.',
+    quantity: '750ml'
+}
 ];

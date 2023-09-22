@@ -13,6 +13,18 @@
       .cards-container{
         .card{
             margin: 1rem;
+            .titleContainer{
+              color: #212121;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 700;
+            }
+            .subTitleContainer{
+              color: var(--neutrals-02, #9F9F9F);
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+            }
         }
       }
     }
