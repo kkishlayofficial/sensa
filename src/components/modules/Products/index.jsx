@@ -21,6 +21,7 @@ const Products = () => {
   const [filteredCategory, setFilteredCategory] = useState(queryParameters.category);
 
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     setFilteredCategory(queryParameters.category);
   }, [queryParameters]);
 

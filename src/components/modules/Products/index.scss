@@ -1,4 +1,21 @@
 .product-container{
+  .fade-enter {
+    opacity: 0;
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+  }
+  
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 500ms;
+  }
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin-top: 100px;

@@ -21,16 +21,18 @@ const Footer = () => {
         </div>
       </div>
       <div className='products'>
-        <div className="title">Our Products</div>
-          <div className="productList">
-            {CategoryList.map(item => {
-              return (
-                <Link to={`/products?category=${item}`}>
-                  <div className='subtitle'>{ item }</div>
-                </Link>
-              )
-            })}
-        </div>
+        <Link to={`/products?category=All`}>
+          <div className="title">Our Products</div>
+        </Link>   
+        <div className="productList">
+          {CategoryList.map(item => {
+            return (
+              <Link to={`/products?category=${item}`}>
+                <div className='subtitle'>{ item }</div>
+              </Link>
+            )
+          })}
+      </div>
       </div>
       <div className="contact">
         <div className="title">Contact Us</div>
