@@ -39,6 +39,10 @@ import soya5 from '../images/Soya 5 Ltr._ImgID1.png';
 import tomato5 from '../images/Tomato Katchup 5 Ltr._ImgID1.png';
 import vinegar1 from '../images/Venagir 1Ltr._ImgID1.png';
 import vinegar5 from '../images/Venagir 0.5 Ltr._ImgID1.png';
+import ginger from '../images/Ginger Paste.png';
+import garlic from '../images/Garlic Paste.png';
+import chocolate from '../images/Chocolate Dressing.png';
+import litchiCrush from '../images/Litchi crush-1Ltr.png'
 
 export const CategoryList = ['Bar-Syrup/Mocktail', 'Fruit Crushes', 'Sharbat & Squash', 'Sauces', 'Culinary Paste'];
 export const ProductList = [
@@ -182,6 +186,7 @@ export const ProductList = [
 {
     category: 'Bar-Syrup/Mocktail',
     name: 'Chocolate Dressing',
+    image: [chocolate],
     desc: "What if the velvety richness of chocolate could take you on a journey of pure bliss! Whether you prefer to dip, drizzle, chew, stir, or squeeze, there's no denying that chocolate is the ultimate delight for your senses. Experience the decadent smoothness of Sensa Dark Chocolate sauce, and discover a new world of taste. With its heavenly flavor, this luscious sauce is the perfect addition to any drink, dessert, salty snack or fruit. Let your imagination run wild and elevate your culinary creations to new heights. Whether you're making desserts, ice cream, cocoa, or coffee drinks, Sensa Dark Chocolate sauce is the ultimate ingredient, topping, or drizzle. Savor the sweetness and let it soothe your soul.",
     ingredients: '',
     applications: 'Coffees, Hot Beverages, Smoothies, Frappes',
@@ -263,6 +268,7 @@ export const ProductList = [
 {
     category: 'Fruit Crushes',
     name: 'Litchi crush',
+    image: [litchiCrush],
     desc: 'Litchis are known for their bright red colour and sweet flavour, both of which make them a perfect ingredient in our litchi crush drink. Using this product on a dessert or to add a refreshing twist to beverages will certainly delight your taste buds.',
     ingredients: 'Sugar, Litchi Pulp (25%), Water, Acidity Regulator (INS-330), Thickener (INS-440)',
     applications: 'Ice-lolly, slush, Mousse, Muffins, Beverage and more',
@@ -326,6 +332,7 @@ export const ProductList = [
 {
     category: 'Culinary Paste',
     name: 'Ginger Paste',
+    image: [ginger],
     desc: 'Ginger Paste is nothing but ginger crushed to a fine paste  and bottled. It is one of the essential ingredient added to many Indian recipes. This product is inspired from our home recipes   As Mom always makes ginger paste and keeps it in the fridge. Our motive is to deliver the same amount of taste 7 freshness through our product.',
     ingredients: 'Water, Salt, Ginger Pulp, Malic acid ',
     applications: 'It can be used in indian as well as  chinese gravies, Tandoori delicacies & in non-veg items as well',
@@ -334,6 +341,7 @@ export const ProductList = [
 {
     category: 'Culinary Paste',
     name: 'Garlic Paste',
+    image:[garlic],
     desc: 'Garlic Paste is nothing but garlic crushed to a fine paste and bottled. It is one of the essential ingredient added to many Indian recipes. This product is inspired from our home recipes   As Mom always makes garlic paste and keeps it in the fridge. Our motive is to deliver the same amount of taste 7 freshness through our product.',
     ingredients: 'Water, Garlic Pulp, Malic acid',
     applications: 'It can be used in Indian as well as Chinese gravies, Tandoori delicacies & in non-veg items as well',
