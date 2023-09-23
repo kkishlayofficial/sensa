@@ -25,6 +25,9 @@
   .nav-menu {
     display: flex;
     background-color: #fff;
+    &.active{
+      padding-left: 0;
+    }
     a {
       color: #000000;
     }

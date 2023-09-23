@@ -2,57 +2,84 @@ import React, { useState } from "react";
 import "./index.scss";
 
 const ReviewForm = ({ onSubmit }) => {
-  const [reviewText, setReviewText] = useState("");
-  const [reviewAuthor, setReviewAuthor] = useState("");
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-  const handleReviewTextChange = (e) => {
-    setReviewText(e.target.value);
-  };
-
-  const handleReviewAuthorChange = (e) => {
-    setReviewAuthor(e.target.value);
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Create a new review object
-    const newReview = {
-      text: reviewText,
-      author: reviewAuthor,
-    };
-    // Call the onSubmit function to submit the review
-    onSubmit(newReview);
-    // Clear the form fields
-    setReviewText("");
-    setReviewAuthor("");
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
   };
 
   return (
     <div className='review-form'>
-      <h2>Submit a Review</h2>
-      <form onSubmit={handleSubmit}>
+      <h2>
+        If you have any query, please reach out to us with your message and
+        we'll get back to you.
+      </h2>
+      <form
+        action='https://formsubmit.co/kishlay111197@gmail.com'
+        onSubmit={handleSubmit}
+        method='POST'
+      >
         <div className='form-group'>
-          <label htmlFor='reviewText'>Review:</label>
-          <textarea
-            id='reviewText'
-            name='reviewText'
-            value={reviewText}
-            onChange={handleReviewTextChange}
-            required
-          ></textarea>
+          <label>
+            Name:
+            <input
+              type='text'
+              name='name'
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+          </label>
         </div>
         <div className='form-group'>
-          <label htmlFor='reviewAuthor'>Your Name:</label>
-          <input
-            type='text'
-            id='reviewAuthor'
-            name='reviewAuthor'
-            value={reviewAuthor}
-            onChange={handleReviewAuthorChange}
-            required
-          />
+          <label>
+            Email:
+            <input
+              type='email'
+              name='email'
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </label>
         </div>
-        <button type='submit'>Submit Review</button>
+        <div className='form-group'>
+          <label>
+            Message:
+            <textarea
+              name='message'
+              value={formData.message}
+              onChange={handleChange}
+              required
+            />
+          </label>
+        </div>
+        <input type='hidden' name='_captcha' value='false'></input>
+        <input
+          type='hidden'
+          name='_autoresponse'
+          value="Thanks for contacting Sensa. We'll get it touch soon!"
+        ></input>
+        <input
+          type='hidden'
+          name='_next'
+          value='https://sensafood.netlify.app'
+        ></input>
+        <button type='submit'>Submit</button>
       </form>
     </div>
   );

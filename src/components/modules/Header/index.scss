@@ -39,30 +39,30 @@
 
     @media screen and (min-width: 769px) and (max-width: 1024px) {
       &.item1 {
-        height: 600px;
+        height: 400px;
         background-image: url("../../../images/CarouselLg1.png");
       }
       &.item2 {
-        height: 600px;
+        height: 400px;
         background-image: url("../../../images/CarouselLg2.png");
       }
       &.item3 {
-        height: 600px;
+        height: 400px;
         background-image: url("../../../images/CarouselLg3.png");
       }
     }
 
     @media screen and (min-width: 1025px) {
       &.item1 {
-        height: 800px;
+        height: 500px;
         background-image: url("../../../images/CarouselLg1.png");
       }
       &.item2 {
-        height: 800px;
+        height: 500px;
         background-image: url("../../../images/CarouselLg2.png");
       }
       &.item3 {
-        height: 800px;
+        height: 500px;
         background-image: url("../../../images/CarouselLg3.png");
       }
     }

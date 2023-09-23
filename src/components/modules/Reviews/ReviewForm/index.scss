@@ -27,7 +27,8 @@
     }
 
     textarea,
-    input[type="text"] {
+    input[type="email"],
+    input[type="text"]{
       width: 100%;
       padding: 12px;
       border: 1px solid #ccc;
@@ -60,6 +61,7 @@
   @media screen and (min-width: 769px) {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    text-align: start;
     h2 {
       display: grid;
       align-items: center;

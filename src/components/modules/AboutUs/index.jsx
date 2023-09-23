@@ -42,9 +42,10 @@ const AboutUs = () => {
             </Fade>
             <Fade bottom>
               <ul>
-                <li>40+ SKU&#39;s being offered</li>
-                <li>100+ channel partner associations</li>
-                <li>Serving over 1400+ HORECA partners</li>
+                <li className="achievements">40+ SKU&#39;s being offered</li>
+                <li className="achievements">100+ channel partner associations</li>
+                <li className="achievements">Serving over 1400+ HORECA partners</li>
+                <li className="achievements">Presence in 5+ states</li>
               </ul>
             </Fade>
             <Fade bottom>

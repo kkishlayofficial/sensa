@@ -22,14 +22,15 @@
         font-weight: 500;
         line-height: 140%;
       }
-
       ul {
         text-align: start;
         list-style: inside;
         li {
           color: #fff;
+          font-size: 1.5rem;
           font-weight: 700;
           text-decoration: underline;
+          font-style: italic;
         }
       }
     }
