@@ -1,72 +1,71 @@
-.aboutUs{
-    background-color: #00AB59;
-    background-image: url(../../../images/AboutUsSm.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    .container{
-        display: grid;
-        padding: 50px;
-        text-align: start;
-        .title{
-            color: #FFF;
-            font-size: 1.5rem;
-            font-style: normal;
-            font-weight: 700;
-        }
-        .subtitle{
-            p{
-                padding: 15px 0;
-                color: #FFF;
-                font-size: 1rem;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 140%;
-            }
-    
-            ul{
-                text-align: start;
-                list-style: inside;
-                li{
-                    color: #FFF;
-                    font-weight: 700;
-                    text-decoration: underline;
-                }
-            }
-        }
-        .imgGroup{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-        }
+.aboutUs {
+  background-color: #00ab59;
+  background-image: url(../../../images/AboutUsSm.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container {
+    display: grid;
+    padding: 50px;
+    text-align: start;
+    .title {
+      color: #fff;
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 700;
     }
+    .subtitle {
+      p {
+        padding: 15px 0;
+        color: #fff;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+      }
 
-    @media screen and (min-width: 426px) and (min-width:768px) {
-        background-image: url(../../../images/AboutUsMd.svg);
-        .container{
-            .title{
-                color: #FFF;
-                font-size: 2rem;
-            }
+      ul {
+        text-align: start;
+        list-style: inside;
+        li {
+          color: #fff;
+          font-weight: 700;
+          text-decoration: underline;
         }
-    }    
-    
-    @media screen and (min-width:769px) {
-        background-image: url(../../../images/AboutUsLg.svg);
-        .container{
-            .title{
-                color: #FFF;
-                font-size: 2rem;
-            }
-            grid-template-columns: repeat(2, 1fr);
-            padding: 60px;
-            .subtitle{
-                text-align: start;
-            }
-            img{
-                width: auto;
-                height: 50vh;
-            }
-        }
+      }
     }
+    .imgGroup {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media screen and (min-width: 426px) and (min-width: 768px) {
+    background-image: url(../../../images/AboutUsMd.svg);
+    .container {
+      .title {
+        color: #fff;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    background-image: url(../../../images/AboutUsLg.svg);
+    .container {
+      .title {
+        color: #fff;
+        font-size: 2rem;
+      }
+      grid-template-columns: repeat(2, 1fr);
+      padding: 60px;
+      .subtitle {
+        text-align: start;
+      }
+      img {
+        width: auto;
+        height: 50vh;
+      }
+    }
+  }
 }

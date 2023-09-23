@@ -1,6 +1,6 @@
-.review-section{
+.review-section {
   margin: 5% 0 0;
-  .title{
+  .title {
     color: #111;
     font-size: 1.5rem;
     font-style: normal;
@@ -12,12 +12,13 @@
   .review-carousel {
     padding: 5% 15%;
     .slick-slider {
-      .slick-prev:before, .slick-next:before{
-        content: '';
+      .slick-prev:before,
+      .slick-next:before {
+        content: "";
       }
-      .slick-list{
-        .slick-track{
-          .slick-slide{
+      .slick-list {
+        .slick-track {
+          .slick-slide {
             display: flex;
             justify-content: center;
           }
@@ -37,37 +38,35 @@
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
         text-align: left;
       }
-      
+
       .review-text {
         font-size: 14px;
         margin-bottom: 10px;
       }
-      
+
       .review-author {
         font-size: 12px;
       }
     }
   }
 
-  
   /* Media query for tablet */
   @media screen and (min-width: 426px) and (max-width: 768px) {
-    .title{
+    .title {
       font-size: 2rem;
     }
     .review-carousel {
       padding: 5% 10%;
+    }
   }
-  }
-  
+
   /* Media query for large screens */
   @media screen and (min-width: 769px) {
-    .title{
+    .title {
       font-size: 2rem;
     }
     .review-carousel {
       padding: 5%;
+    }
   }
-  }
-  
 }

@@ -58,12 +58,11 @@
   }
 
   @media screen and (min-width: 769px) {
-    
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  h2 {
     display: grid;
-    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    h2 {
+      display: grid;
+      align-items: center;
+    }
   }
-  };
 }

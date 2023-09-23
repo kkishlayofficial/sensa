@@ -1,10 +1,10 @@
-import React from 'react'
-import './index.scss'
+import React from "react";
+import "./index.scss";
 const Card = (props) => {
-  const { img, title, height, width,subTitle, className, type } = props;
+  const { img, title, height, width, subTitle, className, type } = props;
   return (
     <div className={`cards ${className ? className : ""} ${type ? type : ""}`}>
-      <div className="imgContainer">
+      <div className='imgContainer'>
         {img?.map((item, index) => {
           return (
             <img
@@ -17,16 +17,16 @@ const Card = (props) => {
           );
         })}
       </div>
-      <div className="titleContainer">
+      <div className='titleContainer'>
         <p>{title}</p>
       </div>
       {subTitle && (
-        <div className="subTitleContainer">
+        <div className='subTitleContainer'>
           <p>{subTitle}</p>
         </div>
       )}
     </div>
   );
-}
+};
 
-export default Card
+export default Card;

@@ -1,8 +1,8 @@
-.exotic-products{
-  background: #F7F7F7;
+.exotic-products {
+  background: #f7f7f7;
   padding: 5% 0;
-  .exotic-products-section{
-    .title{
+  .exotic-products-section {
+    .title {
       color: #111;
       font-size: 1.5rem;
       font-style: normal;
@@ -11,28 +11,29 @@
       text-align: left;
       padding-left: 50px;
     }
-    .products-list{
-      padding:5% 15%;
-      .cards{
-        .titleContainer{
+    .products-list {
+      padding: 5% 10%;
+      .cards {
+        .titleContainer {
           font-size: 1rem;
           font-style: normal;
           font-weight: 700;
         }
-        .subTitleContainer{
-          color: #9F9F9F;
+        .subTitleContainer {
+          color: #9f9f9f;
           font-size: 0.875rem;
           font-style: normal;
           font-weight: 400;
         }
       }
-      .slick-slider{
-        .slick-prev:before, .slick-next:before{
-          content: '';
+      .slick-slider {
+        .slick-prev:before,
+        .slick-next:before {
+          content: "";
         }
-        .slick-list{
-          .slick-track{
-            .slick-slide{
+        .slick-list {
+          .slick-track {
+            .slick-slide {
               display: flex;
               justify-content: center;
             }
@@ -41,20 +42,30 @@
       }
     }
     @media screen and (min-width: 426px) and (max-width: 768px) {
-      .products-list{
-        padding:5% 10%;
+      .products-list {
+        padding: 5% 25px;
       }
-      .title{
+      .title {
         font-size: 2rem;
       }
     }
-    
+
     /* Media query for large screens */
-    @media screen and (min-width: 769px) {
-      .products-list{
-        padding: 5% 7%;
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      .products-list {
+        padding: 5% 2%;
       }
-      .title{
+      .title {
+        font-size: 2rem;
+      }
+    }
+
+    @media screen and (min-width: 1025px) {
+      .products-list {
+        padding: 5% 0;
+      }
+      .title {
+        padding: 0;
         font-size: 2rem;
       }
     }

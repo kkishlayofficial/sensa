@@ -1,13 +1,13 @@
-.category-filter-container{
+.category-filter-container {
   display: flex;
   justify-content: center;
-  .category-filter-mobile{
+  .category-filter-mobile {
     position: relative;
     display: inline-block;
     margin: 2rem 0;
     border-radius: 8px;
-    border: 1px solid #E3E3E3;
-    .heading{
+    border: 1px solid #e3e3e3;
+    .heading {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       align-items: center;
@@ -19,7 +19,7 @@
         transform: rotate(180deg);
       }
     }
-    .filterList{
+    .filterList {
       display: grid;
       padding: 0 10%;
       gap: 20px;
@@ -40,9 +40,9 @@
     gap: 15px;
     flex-shrink: 0;
     border-radius: 8px;
-    border: 1px solid var(--neutrals-04, #E3E3E3);
-    padding:0 20px;
-    h2{
+    border: 1px solid var(--neutrals-04, #e3e3e3);
+    padding: 0 20px;
+    h2 {
       font-size: 1.5rem;
       font-style: normal;
       font-weight: 700;
@@ -50,25 +50,25 @@
     }
     label {
       display: flex;
-      align-items: center;   
-      margin-bottom: 10px;  
-    
+      align-items: center;
+      margin-bottom: 10px;
+
       input[type="radio"] {
-        margin-right: 5px;   
+        margin-right: 5px;
       }
     }
   }
 }
 @media (min-width: 426px) and (max-width: 768px) {
-  .category-filter-mobile{
-    .filterList{
-    grid-template-columns: repeat(2, 1fr);
-    padding: 0 16% !important;
-    gap: 30px !important;
+  .category-filter-mobile {
+    .filterList {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0 16% !important;
+      gap: 30px !important;
     }
   }
-  .category-filter-mobile.expanded{
-    .filterList{
+  .category-filter-mobile.expanded {
+    .filterList {
       gap: 30px !important;
       padding: 0 16% !important;
     }
@@ -76,7 +76,7 @@
 }
 
 @media (min-width: 769px) {
-  .category-filter-container{
+  .category-filter-container {
     display: flex;
     justify-content: center;
     .category-filter {

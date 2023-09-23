@@ -1,10 +1,9 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
-import './index.scss'
+import "./index.scss";
 
 const Header = () => {
-
   const settings = {
     dots: true,
     infinite: true,
@@ -18,7 +17,7 @@ const Header = () => {
     swipeToSlide: true,
   };
 
-  const altItems = ['Bar-Syrup%2FMocktail', 'Fruit Crushes', 'Sauces'];
+  const altItems = ["Bar-Syrup%2FMocktail", "Fruit Crushes", "Sauces"];
 
   return (
     <div className='hero-section'>
@@ -26,14 +25,13 @@ const Header = () => {
         {altItems.map((item, idx) => {
           return (
             <Link to={`/products?category=${item}`}>
-              <div className={`carousel-items item${idx+1}`}>
-              </div>
+              <div className={`carousel-items item${idx + 1}`}></div>
             </Link>
-          )
+          );
         })}
       </Slider>
     </div>
-  )
-}
+  );
+};
 
 export default Header;
