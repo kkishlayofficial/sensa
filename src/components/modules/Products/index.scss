@@ -1,11 +1,10 @@
 .product-container{
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  margin-top: 100px;
+  grid-template-columns: 1fr;
   .filter-container{
     display: flex;
+    margin-top: 90px;
     flex-direction: column;
-    margin-top: 150px;
   }
   .products{
     display: grid;
@@ -30,14 +29,33 @@
   }
 
   @media screen and (min-width: 426px) and (max-width:768px) {
-    .products{
+    .product-container{
+      grid-template-columns: 1fr 2fr;
+      .products{
         grid-template-columns: repeat(2, 1fr);
+    }
     }
   }
 
   @media screen and (min-width: 769px) {
+    .product-container{
+      grid-template-columns: 1fr 2fr;
     .products{
         grid-template-columns: repeat(3, 1fr);
     }
   }
+  }
+}
+
+.modal-desc{
+  display: flex;
+  margin-top: 10px;
+  padding: 10px;
+  .product-desc{
+    margin-top: 20px;
+  padding-left: 20px;
+  }
+}
+.modal-spec{
+  padding: 30px;
 }

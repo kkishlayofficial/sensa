@@ -1,5 +1,7 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import { useLocation } from 'react-router-dom';
+import './index.scss';
+import { BsChevronDown } from "react-icons/bs"
 
 function CategoryFilter({ categories, onFilterChange }) {
   const location = useLocation();
@@ -14,6 +16,7 @@ function CategoryFilter({ categories, onFilterChange }) {
   }, [location.search]);
 
   const [selectedCategory, setSelectedCategory] = useState(queryParameters.category);
+  const [showCategories, setShowCategories] = useState(false);
 
   useEffect(() => {
     setSelectedCategory(queryParameters.category);
@@ -25,9 +28,44 @@ function CategoryFilter({ categories, onFilterChange }) {
     onFilterChange(newCategory);
   };
 
+  const toggleCategories = () => {
+    setShowCategories(!showCategories);
+  };
+
   return (
+    <div>
+    <div className="category-filter-mobile" onClick={toggleCategories} >
+    <BsChevronDown/>
+    <h2 className={`category-title-mobile ${showCategories ? 'mobile-only' : ''}`} >
+      Categories
+    </h2>
+    <ul className={`category-list-mobile ${showCategories ? 'show' : ''}`}>
+    <label key="All">
+        <input
+          type="radio"
+          name="category"
+          value="All"
+          checked={selectedCategory === 'All'}mobile
+          onChange={handleCategoryChange}
+        />
+        All
+      </label>
+      {categories.map((category) => (
+        <label key={category}>
+          <input
+            type="radio"
+            name="category"
+            value={category}
+            checked={selectedCategory === category}
+            onChange={handleCategoryChange}
+          />
+          {category}
+        </label>
+      ))}
+    </ul>
+  </div>
     <div className="category-filter">
-      <h2>Filter by Category:</h2>
+      <h2>Categories:</h2>
       <label key="All">
         <input
           type="radio"
@@ -50,6 +88,7 @@ function CategoryFilter({ categories, onFilterChange }) {
           {category}
         </label>
       ))}
+    </div>
     </div>
   );
 }
