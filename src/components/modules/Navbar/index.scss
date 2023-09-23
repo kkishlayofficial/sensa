@@ -36,9 +36,12 @@
       padding-bottom: 12px;
       border-bottom: 3px solid var(--primary-color);
     }
-    a:hover {
-      padding-bottom: 12px;
-      border-bottom: 3px solid var(--primary-color);
+    a{
+      text-decoration: none;
+      &:hover {
+        padding-bottom: 12px;
+        border-bottom: 3px solid var(--primary-color);
+      }
     }
   }
 }

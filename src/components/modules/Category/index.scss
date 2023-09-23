@@ -16,7 +16,10 @@
         display: grid;
         grid-template-columns: repeat( 1fr);
         div{
-            .card{
+            a{
+                text-decoration: none;
+            }
+            .cards{
                 margin: 1rem;
                 &.categoryCard{
                     &.Sauces{

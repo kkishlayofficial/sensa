@@ -21,12 +21,12 @@ const Header = () => {
   const altItems = ['Bar-Syrup%2FMocktail', 'Fruit Crushes', 'Sauces'];
 
   return (
-    <div className='header-section'>
+    <div className='hero-section'>
       <Slider {...settings}>
         {altItems.map((item, idx) => {
           return (
             <Link to={`/products?category=${item}`}>
-              <div className={`carousel-item item${idx+1}`}>
+              <div className={`carousel-items item${idx+1}`}>
               </div>
             </Link>
           )

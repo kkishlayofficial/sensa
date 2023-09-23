@@ -62,9 +62,6 @@ const ReviewCarousel = () => {
         // Add the new review to the reviews array
         setReviews([...reviews, newReview]);
     };
-    const itemsPerPage = 4;
-    const totalItems = reviews.length;
-    const totalPages = Math.ceil(totalItems / itemsPerPage);
   
     const sliderRef = useRef(null);
   
@@ -87,14 +84,14 @@ const ReviewCarousel = () => {
         <div className="title">Reviews</div>
         <div className="review-carousel">
           <Slider {...settings} ref={sliderRef}>
-                  {reviews.map((review) => (
-                <div className="review-page">
-                      <div key={review.id} className="review-item">
-                        <p className="review-text">{review.text}</p>
-                        <p className="review-author">- {review.author}</p>
-                      </div>
+            {reviews.map((review) => (
+              <div className="review-page">
+                <div key={review.id} className="review-item">
+                  <p className="review-text">{review.text}</p>
+                  <p className="review-author">- {review.author}</p>
                 </div>
-                    ))}
+              </div>
+            ))}
           </Slider>
         </div>
         <ReviewForm onSubmit={handleSubmitReview} />

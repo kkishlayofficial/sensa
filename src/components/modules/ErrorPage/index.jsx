@@ -1,17 +1,27 @@
-import { useRouteError } from "react-router-dom";
+import React, { useState } from 'react';
+import './index.css';
 
-const ErrorPage = () => {
-  const error = useRouteError();
-  console.error(error);
+function DropdownMenu() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
-    <div id="error-page">
-      <h1>Oops!</h1>
-      <p>Sorry, an unexpected error has occurred.</p>
-      <p>
-        <i>{error.statusText || error.message}</i>
-      </p>
+    <div className={`dropdown ${isOpen ? 'open' : ''}`}>
+      <button className="dropdown-button" onClick={toggleDropdown}>
+        Toggle Dropdown
+      </button>
+      <div className="dropdown-content">
+        <ul>
+          <li>Option 1</li>
+          <li>Option 2</li>
+          <li>Option 3</li>
+        </ul>
+      </div>
     </div>
   );
 }
-export default ErrorPage
+
+export default DropdownMenu;

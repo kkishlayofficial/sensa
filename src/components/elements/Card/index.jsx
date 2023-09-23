@@ -3,7 +3,7 @@ import './index.scss'
 const Card = (props) => {
   const { img, title, height, width,subTitle, className, type } = props;
   return (
-    <div className={`card ${className ? className : ""} ${type ? type : ""}`}>
+    <div className={`cards ${className ? className : ""} ${type ? type : ""}`}>
       <div className="imgContainer">
         {img?.map((item, index) => {
           return (

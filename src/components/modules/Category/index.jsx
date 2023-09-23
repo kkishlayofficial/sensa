@@ -1,6 +1,5 @@
 import React from 'react'
 import { CategoryList } from '../../../data';
-import ProductImg from '../../../images/AboutUsGroup.svg'
 import Card from '../../elements/Card';
 import './index.scss';
 import { Fade } from 'react-reveal';
