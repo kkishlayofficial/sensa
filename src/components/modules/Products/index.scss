@@ -28,7 +28,7 @@
           font-weight: 700;
         }
         .subTitleContainer {
-          color: var(--neutrals-02, #9f9f9f);
+          color:#9f9f9f;
           font-size: 16px;
           font-style: normal;
           font-weight: 400;
@@ -91,34 +91,87 @@
   }
 }
 
-.modal-desc {
-  display: flex;
-  margin-top: 10px;
-  padding: 10px;
-  .product-desc {
-    padding-left: 20px;
-  }
-}
-.modal-spec {
-  padding: 30px;
-  .category,
-  .ingredient,
-  .application,
-  .quantity {
-    display: flex;
-    align-items: flex-start;
-    h4 {
-      font-size: 1rem;
-      display: inline;
-      min-width: 100px;
-      margin-top: 1px;
+.modal-body{
+  .similarProducts{
+    padding: 5%;
+    .slick-slider {
+      .slick-prev:before,
+      .slick-next:before {
+        content: "";
+      }
+      .slick-list {
+        .slick-track {
+          .slick-slide {
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
     }
-    p {
-      font-size: 0.875rem;
-      font-weight: 400;
-      margin-bottom: 0.5rem;
-      padding-left: 5px;
-      margin-top: 1px;
+    .cards{
+      height: 200px;
+      width: 150px;
+      .titleContainer{
+        font-size: 1rem;
+        p{
+          margin: 0;
+        }
+      }
+      .subTitleContainer{
+        font-size: 0.75rem;
+        color:#9f9f9f;
+      }
+    }
+  }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .similarProducts {
+      padding: 5% 10%;
+    }
+  }
+  .modal-desc {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 10px;
+    padding: 10px;
+    .productImg{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      transition: 0.4s;
+      &:hover{
+        transform: translateY(-0.75rem);
+      scale: 1.1;
+      }
+    }
+    .product-desc {
+      padding-left: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .modal-spec {
+    padding: 30px;
+    .category,
+    .ingredient,
+    .application,
+    .quantity {
+      display: flex;
+      align-items: flex-start;
+      h4 {
+        font-size: 1rem;
+        display: inline;
+        min-width: 100px;
+        margin-top: 1px;
+      }
+      p {
+        font-size: 0.875rem;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+        padding-left: 5px;
+        margin-top: 1px;
+      }
     }
   }
 }

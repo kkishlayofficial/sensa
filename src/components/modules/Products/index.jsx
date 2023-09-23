@@ -53,10 +53,11 @@ const Products = () => {
   };
 
   const settings = {
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     initialSlide: 0,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -74,6 +75,7 @@ const Products = () => {
       {
         breakpoint: 768,
         settings: {
+          dots: false,
           slidesToShow: 2,
           slidesToScroll: 1,
         },
@@ -81,6 +83,7 @@ const Products = () => {
       {
         breakpoint: 425,
         settings: {
+          dots: false,
           slidesToShow: 1,
           slidesToScroll: 1,
         },
@@ -149,14 +152,14 @@ const Products = () => {
           <ModalBody>
             <div className='modal-desc'>
               {productDesc && productDesc.image[0] && (
-                <>
+                <div className="productImg">
                   <img
                     src={productDesc && productDesc.image[0]}
                     height={"200px"}
                     width={100}
                     alt={productDesc.name}
                   />
-                </>
+                </div>
               )}
               {productDesc && productDesc.desc && (
                 <>
@@ -203,15 +206,17 @@ const Products = () => {
                   .filter((item) => item !== productDesc)
                   .map((item) => {
                     return (
-                      <Card
+                      item.image && <div onClick={() => {setProductDesc(item);}}>
+                        <Card
                         img={item.image}
                         title={item.name}
                         subTitle={item.category}
-                        height={"100px"}
-                        width={"50px"}
+                        height={"120px"}
+                        width={"70px"}
                         type='grey'
                         className='similarProduct'
                       />
+                      </div>
                     );
                   })}
               </Slider>
