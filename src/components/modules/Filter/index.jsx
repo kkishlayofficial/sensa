@@ -81,11 +81,11 @@ function CategoryFilter({ categories, onFilterChange }) {
           <input
             type="radio"
             name="category"
-            value={category}
-            checked={selectedCategory === category}
+            value={category.name}
+            checked={selectedCategory === category.name}
             onChange={handleCategoryChange}
           />
-          {category}
+          {category.name}
         </label>
       ))}
     </div>

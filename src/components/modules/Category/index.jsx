@@ -15,8 +15,8 @@ const Categories = () => {
           return(
             <Fade bottom>
               <div key={idx}>
-                <Link to={`/products?category=${item}`}>
-                  <Card img={[ProductImg]} title={item} height={'200px'} width={'100%'} type='grey' className='categoryCard'/>
+                <Link to={`/products?category=${item.name}`}>
+                  <Card img={item.image} title={item.name} height={'200px'} width={'100%'} type='grey' className={`categoryCard ${item.name}`} />
                 </Link>
               </div>
             </Fade>

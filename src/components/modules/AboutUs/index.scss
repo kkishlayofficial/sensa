@@ -1,5 +1,4 @@
 .aboutUs{
-    margin-top: 50px;
     background-color: #00AB59;
     background-image: url(../../../images/AboutUsSm.svg);
     background-repeat: no-repeat;
@@ -10,7 +9,7 @@
         text-align: start;
         .title{
             color: #FFF;
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-style: normal;
             font-weight: 700;
         }
@@ -44,11 +43,21 @@
 
     @media screen and (min-width: 426px) and (min-width:768px) {
         background-image: url(../../../images/AboutUsMd.svg);
+        .container{
+            .title{
+                color: #FFF;
+                font-size: 2rem;
+            }
+        }
     }    
     
     @media screen and (min-width:769px) {
         background-image: url(../../../images/AboutUsLg.svg);
         .container{
+            .title{
+                color: #FFF;
+                font-size: 2rem;
+            }
             grid-template-columns: repeat(2, 1fr);
             padding: 60px;
             .subtitle{

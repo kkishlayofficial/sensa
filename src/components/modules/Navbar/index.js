@@ -10,6 +10,12 @@ const Navbar = () => {
 
   const closeMenu = () => setClick(false);
 
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -90; 
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
+}
+
   return (
     <div className="header">
       <nav className="navbar">
@@ -31,13 +37,18 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/#categories" spy={true} smooth={true} onClick={closeMenu}>
+            <Link to="/#categories" spy={true} smooth={true} scroll={scrollWithOffset} onClick={closeMenu}>
               Categories
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/#about" spy={true} smooth={true}  onClick={closeMenu}>
+            <Link to="/#about" spy={true} smooth={true} scroll={scrollWithOffset} onClick={closeMenu}>
               About
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/#reviews" spy={true} smooth={true} scroll={scrollWithOffset} onClick={closeMenu}>
+              Reviews
             </Link>
           </li>
         </ul>

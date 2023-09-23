@@ -27,8 +27,8 @@ const Footer = () => {
         <div className="productList">
           {CategoryList.map(item => {
             return (
-              <Link to={`/products?category=${item}`}>
-                <div className='subtitle'>{ item }</div>
+              <Link to={`/products?category=${item.name}`}>
+                <div className='subtitle'>{ item.name }</div>
               </Link>
             )
           })}

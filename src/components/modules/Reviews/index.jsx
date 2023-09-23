@@ -4,6 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './index.scss';
 import ReviewForm from './ReviewForm';
+import { SampleNextArrow, SamplePrevArrow } from '../../elements/ArrowButton'
 
 const reviewArr = [
     {
@@ -33,7 +34,7 @@ const reviewArr = [
     },
     {
       id: 6,
-      text: 'Review 6 - Proin euismod massa at quam venenatis, non tristique justo vestibulum.',
+      text: 'Review 6 - Proin euismod massa at quam venenatis, non tristique justo.',
       author: 'Mike Davis',
     },
     {
@@ -77,27 +78,26 @@ const ReviewCarousel = () => {
       autoplay: true, // Enable automatic sliding
       autoplaySpeed: 3000, // Slide every 2 seconds
       swipeToSlide: true,
+      nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />,
     };
   
     return (
-      <div className="review-carousel">
-        <Slider {...settings} ref={sliderRef}>
-          {Array.from({ length: totalPages }).map((_, pageIndex) => (
-            <div key={pageIndex}>
-              <div className="review-page">
-                {reviews
-                  .slice(pageIndex * itemsPerPage, (pageIndex + 1) * itemsPerPage)
-                  .map((review) => (
-                    <div key={review.id} className="review-item">
-                      <p className="review-text">{review.text}</p>
-                      <p className="review-author">- {review.author}</p>
-                    </div>
-                  ))}
-              </div>
-            </div>
-          ))}
-            </Slider>
-            <ReviewForm onSubmit={handleSubmitReview} />
+      <div className="review-section" id='reviews'>
+        <div className="title">Reviews</div>
+        <div className="review-carousel">
+          <Slider {...settings} ref={sliderRef}>
+                  {reviews.map((review) => (
+                <div className="review-page">
+                      <div key={review.id} className="review-item">
+                        <p className="review-text">{review.text}</p>
+                        <p className="review-author">- {review.author}</p>
+                      </div>
+                </div>
+                    ))}
+          </Slider>
+        </div>
+        <ReviewForm onSubmit={handleSubmitReview} />
       </div>
     );
   };

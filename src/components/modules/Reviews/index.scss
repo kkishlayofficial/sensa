@@ -1,53 +1,73 @@
-/* Base styles for mobile */
-.review-carousel {
+.review-section{
+  margin: 5% 0 0;
+  .title{
+    color: #111;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
     width: 100%;
-    padding: 25px;
-    text-align: center;
-  }
-  
-  .review-page {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .review-item {
-    flex: 0 0 calc(100% - 10px); /* Initially show 1 slide per row on mobile */
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #f5f5f5;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     text-align: left;
+    padding-left: 50px;
   }
-  
-  .review-text {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-  
-  .review-author {
-    font-size: 12px;
+  .review-carousel {
+    padding: 5% 15%;
+    .slick-slider {
+      .slick-prev:before, .slick-next:before{
+        content: '';
+      }
+      .slick-list{
+        .slick-track{
+          .slick-slide{
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+    .review-page {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .review-item {
+        flex: 0 0 calc(100% - 10px); /* Initially show 1 slide per row on mobile */
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        text-align: left;
+      }
+      
+      .review-text {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+      
+      .review-author {
+        font-size: 12px;
+      }
+    }
   }
 
-  .slick-arrow{
-    height: 100%;
-    background-color: black;
-    opacity: 0.3;
-    border-radius: 0.2rem;
-  }
   
   /* Media query for tablet */
   @media screen and (min-width: 426px) and (max-width: 768px) {
-    .review-item {
-      flex: 0 0 calc(50% - 10px); /* Show 2 slides per row on tablets */
+    .title{
+      font-size: 2rem;
     }
+    .review-carousel {
+      padding: 5% 10%;
+  }
   }
   
   /* Media query for large screens */
   @media screen and (min-width: 769px) {
-    .review-item {
-      flex: 0 0 calc(25% - 10px); /* Show 3 slides per row on large screens */
+    .title{
+      font-size: 2rem;
     }
+    .review-carousel {
+      padding: 5%;
+  }
   }
   
+}

@@ -21,30 +21,61 @@ import strawberry750 from '../images/Strwaberry 750 ml.png';
 import strawberry1 from '../images/Strwaberry 1Lt_.png';
 import litchi1 from "../images/Lichi 1 Ltr.'.png";
 import fruitBier1 from '../images/Frucht Bier 1 Ltr_.png';
-import strawberryCrush from '../images/Strawaberry_ImgID1.png';
-import pineappleCrush from '../images/Pinapple_ImgID1.png';
-import butterscotchCrush from '../images/Butterscoch_ImgID1.png';
-import mangoCrush from '../images/Mango_ImgID1.png';
-import kiwiCrush from '../images/KIWI_ImgID1.png';
-import orangeCrush from '../images/Orange_ImgID1.png';
-import mixFruitCrush from '../images/Mix Fruit_ImgID1.png';
-import blackCurrantCrush from '../images/Black Current_ImgID1.png';
-import shahiPaanCrush from '../images/Sahi pan_ImgID1.png';
-import greenChilli1 from '../images/Green SOUS_ImgID1.png';
-import greenChilli5 from '../images/Green Chilly 5 Ltr._ImgID1.png';
-import redChilli1 from '../images/RED SOUS_ImgID1.png';
-import redChilli5 from '../images/RED CHILI 5 Ltr._ImgID1.png';
-import soya1 from '../images/Soya 1 Ltr._ImgID1.png';
-import soya5 from '../images/Soya 5 Ltr._ImgID1.png';
-import tomato5 from '../images/Tomato Katchup 5 Ltr._ImgID1.png';
-import vinegar1 from '../images/Venagir 1Ltr._ImgID1.png';
-import vinegar5 from '../images/Venagir 0.5 Ltr._ImgID1.png';
+import strawberryCrush from '../images/StrawberryCrush.png';
+import pineappleCrush from '../images/PineappleCrush.png';
+import butterscotchCrush from '../images/ButterscotchCrush.png';
+import mangoCrush from '../images/MangoCrush.png';
+import kiwiCrush from '../images/KiwiCrush.png';
+import orangeCrush from '../images/OrangeCrush.png';
+import mixFruitCrush from '../images/MixFruitCrush.png';
+import blackCurrantCrush from '../images/BlackCurrantCrush.png';
+import shahiPaanCrush from '../images/ShahiPaanCrush.png';
+import greenChilli1 from '../images/GreenChilli1.png';
+import greenChilli5 from '../images/GreenChilli5Ltr.png';
+import redChilli1 from '../images/RedChilli1.png';
+import redChilli5 from '../images/RedChilli5Ltr.png';
+import soya1 from '../images/Soya1Ltr.png';
+import soya5 from '../images/Soya5Ltr.png';
+import tomato5 from '../images/TomatoKetchup5Ltr.png';
+import vinegar1 from '../images/Vinegar1Ltr.png';
+import vinegar5 from '../images/Vinegar0.5.png';
 import ginger from '../images/Ginger Paste.png';
 import garlic from '../images/Garlic Paste.png';
-import chocolate from '../images/Chocolate Dressing.png';
+import chocolate from '../images/ChocolateDressing.png';
 import litchiCrush from '../images/Litchi crush-1Ltr.png'
+import MocktailGroup from '../images/AboutUsGroup.svg';
+import CrushGroup from '../images/Carousel2.png'
+import SaucesGroup from '../images/SaucesGroup.png'
+import SquashGroup from '../images/Squash.png'
+import CulinaryGroup from '../images/CulinaryGroup.png'
+import RoseSharbat from '../images/RoseSharbat.png'
+import AamPanna from '../images/AamPannaSquash.png'
+import LemonSquash from '../images/LemonSquash.png'
+import OrangeSquash from '../images/OrangeSquash.png'
+import ChatpataJeera from '../images/ChatpataJeeraSquash.png'
 
-export const CategoryList = ['Bar-Syrup/Mocktail', 'Fruit Crushes', 'Sharbat & Squash', 'Sauces', 'Culinary Paste'];
+export const CategoryList = [
+    {
+        name: 'Bar-Syrup/Mocktail',
+        image: [MocktailGroup]
+    },
+    {
+        name: 'Fruit Crushes',
+        image: [CrushGroup]
+    },
+    {
+        name: 'Sauces',
+        image: [SaucesGroup]
+    },
+    {
+        name: 'Sharbat & Squash',
+        image: [SquashGroup]
+    },
+    {
+        name: 'Culinary Paste',
+        image: [CulinaryGroup]
+    }
+];
 export const ProductList = [
 {
     category: 'Bar-Syrup/Mocktail',
@@ -349,6 +380,7 @@ export const ProductList = [
 },
 {
     category: 'Sharbat & Squash',
+    image: [RoseSharbat],
     name: 'Rose Sharbat',
     desc: 'Made from real rose petals, this sharbat is ideally blends with puddings and ice-creams.',
     ingredients: 'Sugar, Water, Rose water, Preservatives(INS 211), Rose petals, Acidity Regulator(INS 330), Color (INS 122)',
@@ -366,6 +398,7 @@ export const ProductList = [
 {
     category: 'Sharbat & Squash',
     name: 'Aam Panna',
+    image:[AamPanna],
     desc: 'Sensa Aam Panna is a delicious and beneficial raw mango beverage that offersa tangy and sweet taste as well as it can fight the heat strokes as well',
     ingredients: 'Sugar, Water, Raw mango pulp (20%), lemon juice (5%), spices condiments ,thickener (INS 415) , salt, Preservative (INS 330), Acidity Regulator (INS 211 &amp; INS224), Color(INS 102 &amp; INS 133)',
     applications: 'Simply mix one part of the syrup with four parts of club soda, stir, and serve for asatisfying and revitalizing drink.',
@@ -374,6 +407,7 @@ export const ProductList = [
 {
     category: 'Sharbat & Squash',
     name: 'Lemon Squash',
+    image: [LemonSquash],
     desc: 'Sensa Lemon squash is a traditional remedy to fight from the scorching heat and perfect for saving you from dehydration. It is produced from the juice of carefully selected organic lemons. It is enriched with antioxidant properties and is a naturalhealth restorer. It improves digestion and blood circulation providing the body amuch-needed boost.',
     ingredients: 'Sugar, Water, lemon juice (25%), Preservative (INS 211 &amp; 224), Acidity Regulator(INS 330), Thickener (INS 415), Color(INS 102)',
     applications: 'Simply mix one part of the syrup with four parts of club soda, stir, and serve for asatisfying and revitalizing drink',
@@ -382,6 +416,7 @@ export const ProductList = [
 {
     category: 'Sharbat & Squash',
     name: 'Khatta Meetha Orange',
+    image: [OrangeSquash],
     desc: 'Every sip of Sensa Juicy Orange Squash is enriched with the goodness of Fruit Vitamins A, B, and C. Our Orange Squash has more fruit juice in every sip ascompared to Leading Instant Drink Mix. Enjoy the deliciously refreshing Orange taste with water or soda.',
     ingredients: 'Sugar, Water, orange juice (25%), Preservative (INS 211 &amp; INS 224), AcidityRegulator (INS 330), Thickener (INS 415), color (INS 110)',
     applications: 'Simply mix one part of the syrup with four parts of club soda, stir, and serve for asatisfying and revitalizing drink.',
@@ -390,6 +425,7 @@ export const ProductList = [
 {
     category: 'Sharbat & Squash',
     name: 'Chatpata Jeera',
+    image: [ChatpataJeera],
     desc: 'From boosting digestion and staying hydrated to treating anemia naturally and weightloss, Chatpata jeera sharbat has many benefits. It’s rich in Vitamin E and also contains anti-inflammatory properties.Sensa Chatpata Jeera Treat has a strong and invigorating flavor and aroma which freshens you during the summer season. It helps in keeping the body cool and boosts digestion. A perfect drink for a hot summer day with a lasting tingling effect on the taste buds. Stay energetic and active all day long',
     ingredients: 'Sugar, Water, Fruit Pulp (20%), lemon Juice (5%), Cumin Seeds, Spices, condiments,Thickener (INS 415), salt, Preservative (INS 211 &amp; INS 224), Acidity Regulator (INS330), Colors (INS 150d )',
     applications: 'Simply mix one part of the syrup with four parts of club soda, stir, and serve for asatisfying and revitalizing drink.',

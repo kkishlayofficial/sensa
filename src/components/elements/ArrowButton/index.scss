@@ -1,0 +1,15 @@
+.nextImg, .prevImg{
+    width: 75%;
+    height: 80%;
+    display: grid;
+    align-items: center;
+    z-index: 1;
+}
+
+.nextImg{
+    justify-content: start;
+}
+
+.prevImg{
+    justify-content: end;
+}

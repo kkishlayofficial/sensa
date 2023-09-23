@@ -1,13 +1,12 @@
 /* Review Form Container */
 .review-form {
-  margin: 0 auto;
+  margin: 2rem auto 0 auto;
   padding: 40px;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin-top: 5rem;
 
   h2 {
     font-size: 24px;
@@ -57,4 +56,14 @@
       background-color: #0056b3;
     }
   }
+
+  @media screen and (min-width: 769px) {
+    
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  h2 {
+    display: grid;
+    align-items: center;
+  }
+  };
 }

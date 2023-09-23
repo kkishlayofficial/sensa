@@ -1,0 +1,62 @@
+.exotic-products{
+  background: #F7F7F7;
+  padding: 5% 0;
+  .exotic-products-section{
+    .title{
+      color: #111;
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 700;
+      width: 100%;
+      text-align: left;
+      padding-left: 50px;
+    }
+    .products-list{
+      padding:5% 15%;
+      .card{
+        .titleContainer{
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 700;
+        }
+        .subTitleContainer{
+          color: #9F9F9F;
+          font-size: 0.875rem;
+          font-style: normal;
+          font-weight: 400;
+        }
+      }
+      .slick-slider{
+        .slick-prev:before, .slick-next:before{
+          content: '';
+        }
+        .slick-list{
+          .slick-track{
+            .slick-slide{
+              display: flex;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+    @media screen and (min-width: 426px) and (max-width: 768px) {
+      .products-list{
+        padding:5% 10%;
+      }
+      .title{
+        font-size: 2rem;
+      }
+    }
+    
+    /* Media query for large screens */
+    @media screen and (min-width: 769px) {
+      .products-list{
+        padding: 5% 7%;
+      }
+      .title{
+        font-size: 2rem;
+      }
+    }
+  }
+}
