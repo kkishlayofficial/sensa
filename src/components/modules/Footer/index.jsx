@@ -47,21 +47,21 @@ const Footer = () => {
         <div className='title'>
           <a
             className='call'
-            href='tel:9810565200'
+            href='tel:+919810565200'
             title='CLICK TO DIAL - Mobile Only'
           >
             <BiPhoneCall size={30} className='buzz-out-on-hover wave' />
-            9810565200
+            +91 9810565200
           </a>
         </div>
         <div className='title'>
           <a
             className='call'
-            href='tel:8826406306'
+            href='tel:+918826406306'
             title='CLICK TO DIAL - Mobile Only'
           >
             <BiPhoneCall size={30} className='buzz-out-on-hover wave' />
-            8826406306
+            +91 8826406306
           </a>
         </div>
       </div>

@@ -17,15 +17,15 @@ const Header = () => {
     swipeToSlide: true,
   };
 
-  const altItems = ["Bar-Syrup%2FMocktail", "Fruit Crushes", "Sauces"];
+  const altItems = ["All", "Bar-Syrup%2FMocktail", "Fruit Crushes", "Sauces"];
 
   return (
-    <div className='hero-section'>
+    <div className='hero-section-carousel'>
       <Slider {...settings}>
         {altItems.map((item, idx) => {
           return (
             <Link to={`/products?category=${item}`}>
-              <div className={`carousel-items item${idx + 1}`}></div>
+              <div className={`carouselItems item${idx}`}></div>
             </Link>
           );
         })}
