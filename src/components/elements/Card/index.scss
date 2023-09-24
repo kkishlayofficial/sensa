@@ -18,13 +18,20 @@
   }
   .imgContainer {
     width: 100%;
-    transition: 0.4s;
     display: flex;
     justify-content: center;
-    &:hover {
-      cursor: pointer;
-      transform: translateY(-0.75rem);
-      scale: 1.1;
+    align-items: end;
+    img{
+      transition: 0.4s;
+      height: 170px;
+      &:hover {
+        cursor: pointer;
+        transform: translateY(-0.75rem);
+        scale: 1.1;
+      }
+    }
+    img:last-child{
+      height: 210px;
     }
   }
   .titleContainer {
@@ -32,7 +39,6 @@
       font-size: 1.5rem;
     }
   }
-
   .subTitleContainer {
     .p {
       font-size: 1rem;
