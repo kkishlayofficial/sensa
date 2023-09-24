@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 import logo from "../../../images/logo.png";
-import { HashLink as Link } from "react-router-hash-link"; // Import HashLink
+import { HashLink as Link } from "react-router-hash-link";
 import "./index.scss";
 
 const Navbar = () => {

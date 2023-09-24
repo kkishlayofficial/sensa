@@ -1,4 +1,3 @@
-/* Review Form Container */
 .review-form {
   margin: 2rem auto 0 auto;
   padding: 40px;
@@ -14,10 +13,8 @@
     margin-bottom: 20px;
   }
 
-  /* Form Inputs */
   .form-group {
     margin-bottom: 20px;
-
     label {
       display: block;
       font-size: 18px;
@@ -25,7 +22,6 @@
       margin-bottom: 10px;
       text-align: left;
     }
-
     textarea,
     input[type="email"],
     input[type="text"]{
@@ -35,13 +31,11 @@
       border-radius: 5px;
       font-size: 16px;
     }
-
     textarea {
       height: 150px;
     }
   }
 
-  /* Submit Button */
   button[type="submit"] {
     width: 100%;
     background-color: #212121;

@@ -3,7 +3,7 @@ import { CategoryList } from "../../../data";
 import Card from "../../elements/Card";
 import "./index.scss";
 import { Fade } from "react-reveal";
-import { HashLink as Link } from "react-router-hash-link"; // Import HashLink
+import { HashLink as Link } from "react-router-hash-link";
 
 const Categories = () => {
   return (

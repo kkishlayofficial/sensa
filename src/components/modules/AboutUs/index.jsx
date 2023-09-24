@@ -58,7 +58,7 @@ const AboutUs = () => {
         </div>
         <Fade bottom>
           <div className='imgGroup'>
-            <img src={AboutUsGroup} />
+            <img src={AboutUsGroup} alt=""/>
           </div>
         </Fade>
       </Container>

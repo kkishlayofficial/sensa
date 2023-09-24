@@ -105,7 +105,6 @@ const ExoticProducts = () => {
                 .filter((item) => item.image)
                 .map((item) => {
                   return (
-
                     item?.image && (
                       <Fade bottom>
                         <div
@@ -141,7 +140,7 @@ const ExoticProducts = () => {
           <ModalBody>
             <div className='modal-desc'>
               {productDesc && productDesc.image[0] && (
-                <div className="productImg">
+                <div className='productImg'>
                   <img
                     src={productDesc && productDesc.image[0]}
                     height={"200px"}
@@ -194,17 +193,23 @@ const ExoticProducts = () => {
                   .filter((item) => item !== productDesc)
                   .map((item) => {
                     return (
-                      item.image && <div onClick={() => {setProductDesc(item);}}>
-                        <Card
-                        img={item.image}
-                        title={item.name}
-                        subTitle={item.category}
-                        height={"120px"}
-                        width={"70px"}
-                        type='grey'
-                        className='similarProduct'
-                      />
-                      </div>
+                      item.image && (
+                        <div
+                          onClick={() => {
+                            setProductDesc(item);
+                          }}
+                        >
+                          <Card
+                            img={item.image}
+                            title={item.name}
+                            subTitle={item.category}
+                            height={"120px"}
+                            width={"70px"}
+                            type='grey'
+                            className='similarProduct'
+                          />
+                        </div>
+                      )
                     );
                   })}
               </Slider>

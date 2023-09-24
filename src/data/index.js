@@ -487,3 +487,51 @@ export const ProductList = [
     quantity: "750ml",
   },
 ];
+
+export const Reviews = [
+  {
+    id: 1,
+    text: "Served this at a family gathering, and everyone loved it!",
+    author: "Rajesh Sharma",
+  },
+  {
+    id: 2,
+    text: "Turns our regular drinks into tasty mocktails.",
+    author: "Sunil Singh",
+  },
+  {
+    id: 3,
+    text: "Blends magically with our 'lassi' and yogurt drinks.",
+    author: "Arjun",
+  },
+  {
+    id: 4,
+    text: "Brings back memories of childhood summers.",
+    author: "Rishi Shukla",
+  },
+  {
+    id: 5,
+    text: "Litchi Crush tastes like biting into a fresh litchi.",
+    author: "Nisha Kapoor",
+  },
+  {
+    id: 6,
+    text: "Shahi Paan Crush is taste of tradition with a modern twist.", 
+    author: "Sanjay Bhati",
+  },
+  {
+    id: 7,
+    text: "Vinegar Adds that 'chatpata' taste to salads.",
+    author: "Anand Kumar",
+  },
+  {
+    id: 8,
+    text: "Chatpata Jeera has nostalgic taste of childhood street food.",
+    author: "Meenakshi Sinha",
+  },
+  {
+    id: 9,
+    text: "Kids won't eat their fries without Tomato Ketchup!",
+    author: "Geeta Kapadia",
+  },
+];
