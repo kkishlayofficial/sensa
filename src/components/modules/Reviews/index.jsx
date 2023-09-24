@@ -14,7 +14,7 @@ const ReviewCarousel = () => {
   };
   const sliderRef = useRef(null);
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -25,11 +25,20 @@ const ReviewCarousel = () => {
     swipeToSlide: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 425,
+        settings: {
+          dots: false,
+        },
+      },
+    ],
   };
 
   return (
     <div className='review-section' id='reviews'>
       <div className='title'>Reviews</div>
+      <div className="review-container">
       <div className='review-carousel'>
         <Slider {...settings} ref={sliderRef}>
           {reviews.map((review) => (
@@ -43,6 +52,7 @@ const ReviewCarousel = () => {
         </Slider>
       </div>
       <ReviewForm onSubmit={handleSubmitReview} />
+      </div>
     </div>
   );
 };

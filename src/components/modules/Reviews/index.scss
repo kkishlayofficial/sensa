@@ -59,8 +59,14 @@
     .title {
       font-size: 2rem;
     }
-    .review-carousel {
-      padding: 5%;
+    .review-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .review-carousel {
+        padding: 5%;
+        width: 50%;
+      }
     }
   }
 }
