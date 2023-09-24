@@ -373,7 +373,7 @@ export const ProductList = [
   {
     category: "Sauces",
     name: "Dark Soya Sauce",
-    image: [soya1, soya5],
+    image: [soya5, soya1],
     desc: "Get your hands on this Dark Soya Sauce, which is an exotic bouquet of flavours and aromas. It makes every cuisine delightful. With its minute use, you can prepare awesome dishes like Manchurian, Noodles, and almost all the Chinese dishes, as they are incomplete without the Dark Soya Sauce.",
     ingredients:
       "Water, Sugar, Iodised Salt, Soyabean Extract - 13%, Caramel - Natural Colour (150 c), Acidity Regulator (260), Garlic Powder, Onion Powder, Spices & Condiments and Preservative (211). CONTAINS PERMITTED NATURAL COLOUR (150C).",
@@ -394,7 +394,7 @@ export const ProductList = [
   {
     category: "Sauces",
     name: "Vinegar",
-    image: [vinegar1, vinegar5],
+    image: [ vinegar5, vinegar1],
     desc: "Add an acetic aroma and a distinct flavour to your dish with White Vinegar. You can use it as an accompaniment for different kind of food items. So, what are you waiting for? Splash White Vinegar into your Chinese and other Savoury dishes, Pickles, etc., for adding an amazing aroma to your boring dishes.",
     ingredients: "Water, Acetic Acid (Acidity Regulator - 260)",
     applications:
