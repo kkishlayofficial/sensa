@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /products
+Allow: /products?category=All
+Allow: /products?category=Bar-Syrup%2FMocktail
+Allow: /products?category=Sauces
+Allow: /products?category=Sharbat+%26+Squash
+Allow: /products?category=Culinary+Paste
