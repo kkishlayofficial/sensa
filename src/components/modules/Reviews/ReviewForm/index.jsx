@@ -24,7 +24,7 @@ const ReviewForm = ({ onSubmit }) => {
 
   return (
     <div className='review-form'>
-      <h2>
+      <h2 title="Queries">
         If you have any query, please reach out to us with your message and
         we'll get back to you.
       </h2>

@@ -8,10 +8,12 @@
     padding: 50px;
     text-align: start;
     .title {
-      color: #fff;
-      font-size: 1.5rem;
-      font-style: normal;
-      font-weight: 700;
+      h1{
+        color: #fff;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+      }
     }
     .subtitle {
       p {
@@ -45,8 +47,10 @@
     background-image: url(../../../images/AboutUsMd.svg);
     .container {
       .title {
-        color: #fff;
+        h1{
+          color: #fff;
         font-size: 2rem;
+        }
       }
     }
   }
@@ -55,8 +59,10 @@
     background-image: url(../../../images/AboutUsLg.svg);
     .container {
       .title {
-        color: #fff;
+        h1{
+          color: #fff;
         font-size: 2rem;
+        }
       }
       grid-template-columns: repeat(2, 1fr);
       padding: 60px;

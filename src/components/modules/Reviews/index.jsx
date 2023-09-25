@@ -37,7 +37,9 @@ const ReviewCarousel = () => {
 
   return (
     <div className='review-section' id='reviews'>
-      <div className='title'>Reviews</div>
+      <div className='title'>
+        <h1 title="Reviews">Reviews</h1>
+      </div>
       <div className="review-container">
       <div className='review-carousel'>
         <Slider {...settings} ref={sliderRef}>

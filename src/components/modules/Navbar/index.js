@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
-import logo from "../../../images/logo.png";
+import logo from "../../../images/logo.webp";
 import { HashLink as Link } from "react-router-hash-link";
 import "./index.scss";
 

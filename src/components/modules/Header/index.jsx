@@ -24,7 +24,7 @@ const Header = () => {
       <Slider {...settings}>
         {altItems.map((item, idx) => {
           return (
-            <Link to={`/products?category=${item}`}>
+            <Link title={`Link to ${item} products`} to={`/products?category=${item}`}>
               <div className={`carouselItems item${idx}`}></div>
             </Link>
           );

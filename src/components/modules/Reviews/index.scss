@@ -1,13 +1,15 @@
 .review-section {
   margin: 5% 0 0 0;
   .title {
-    color: #111;
+    h1{
+      color: #111;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
     width: 100%;
     text-align: left;
     padding-left: 50px;
+    }
   }
   .review-carousel {
     padding: 5% 15%;
@@ -49,7 +51,9 @@
   }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .title {
-      font-size: 2rem;
+      h1{
+        font-size: 2rem;
+      }
     }
     .review-carousel {
       padding: 5% 10%;
@@ -58,7 +62,9 @@
   @media screen and (min-width: 769px) {
     margin: 3% 0 0 0;
     .title {
-      font-size: 2rem;
+      h1{
+        font-size: 2rem;
+      }
     }
     .review-container{
       display: flex;

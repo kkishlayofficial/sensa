@@ -28,18 +28,18 @@
           height: 700px;
         }
 
-        background-image: url("../../../images/CarouselSm#{$i}.png") !important;
+        background-image: url("../../../images/CarouselSm#{$i}.webp") !important;
 
         @media screen and (min-width: 426px) and (max-width: 768px) {
-          background-image: url("../../../images/CarouselMd#{$i}.png") !important;
+          background-image: url("../../../images/CarouselMd#{$i}.webp") !important;
         }
 
         @media screen and (min-width: 769px) and (max-width: 1024px) {
-          background-image: url("../../../images/CarouselLg#{$i}.png") !important;
+          background-image: url("../../../images/CarouselLg#{$i}.webp") !important;
         }
 
         @media screen and (min-width: 1025px) {
-          background-image: url("../../../images/CarouselLg#{$i}.png") !important;
+          background-image: url("../../../images/CarouselLg#{$i}.webp") !important;
         }
       }
     }

@@ -4,13 +4,15 @@
   align-items: center;
   margin: 10% 0;
   .title {
-    color: #111;
+    h1{
+      color: #111;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
     width: 100%;
     text-align: left;
     padding-left: 50px;
+    }
   }
   .categoryList {
     display: grid;
@@ -41,7 +43,9 @@
 
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .title {
-      font-size: 2rem;
+      h1{
+        font-size: 2rem;
+      }
     }
     .categoryList {
       grid-template-columns: repeat(2, 1fr);
@@ -55,7 +59,9 @@
 
   @media screen and (min-width: 769px) and (max-width: 1024px) {
     .title {
-      font-size: 2rem;
+      h1{
+        font-size: 2rem;
+      }
     }
     .categoryList {
       grid-template-columns: repeat(3, 1fr);
@@ -69,7 +75,9 @@
 
   @media screen and (min-width: 1025px) {
     .title {
-      font-size: 2rem;
+      h1{
+        font-size: 2rem;
+      }
     }
     .categoryList {
       grid-template-columns: repeat(5, 1fr);

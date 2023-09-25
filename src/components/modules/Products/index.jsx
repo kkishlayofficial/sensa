@@ -10,6 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Fade } from "react-reveal";
 import Slider from "react-slick";
 import { SampleNextArrow, SamplePrevArrow } from "../../elements/ArrowButton";
+import { Helmet } from "react-helmet";
 
 const Products = () => {
   const location = useLocation();
@@ -100,8 +101,24 @@ const Products = () => {
     size: "lg",
   };
 
+  const [content, setContent] = useState("");
+
+  useEffect(() => {
+    CategoryList.map((item) => {
+      if (item.name === filteredCategory) setContent(item.products);
+    });
+  }, [filteredCategory]);
+
   return (
     <div>
+      <Helmet>
+        <title>{`Sensa-${
+          filteredCategory === "All" ? "All Products" : filteredCategory
+        }`}</title>
+        <meta name='description' content={content} />
+        <meta name='keyword' content={content} />
+        <link rel='canonical' href={window.location.href} />
+      </Helmet>
       <div className='product-container'>
         <div className='filter-container'>
           <CategoryFilter
@@ -111,7 +128,11 @@ const Products = () => {
         </div>
         <div>
           <div className='selectedCategory'>
-            <h1>
+            <h1
+              title={
+                filteredCategory === "All" ? "All Products" : filteredCategory
+              }
+            >
               {filteredCategory === "All" ? "All Products" : filteredCategory}
             </h1>
           </div>
@@ -152,7 +173,7 @@ const Products = () => {
           <ModalBody>
             <div className='modal-desc'>
               {productDesc && productDesc.image[0] && (
-                <div className="productImg">
+                <div className='productImg'>
                   <img
                     src={productDesc && productDesc.image[0]}
                     height={"200px"}
@@ -172,13 +193,17 @@ const Products = () => {
             <div className='modal-spec'>
               {productDesc && productDesc.category && (
                 <div className='category'>
-                  <h4 className='categoryTitle'>Category :</h4>{" "}
+                  <h4 className='categoryTitle' title='Category'>
+                    Category :
+                  </h4>{" "}
                   <p className='categorySubTitle'>{productDesc.category}</p>
                 </div>
               )}
               {productDesc && productDesc.ingredients && (
                 <div className='ingredient'>
-                  <h4 className='ingredientsTitle'>Ingredients :</h4>{" "}
+                  <h4 className='ingredientsTitle' title='Ingredients'>
+                    Ingredients :
+                  </h4>{" "}
                   <p className='ingredientsSubTitle'>
                     {productDesc.ingredients}
                   </p>
@@ -186,7 +211,9 @@ const Products = () => {
               )}
               {productDesc && productDesc.applications && (
                 <div className='application'>
-                  <h4 className='applicationTitle'>Applications :</h4>{" "}
+                  <h4 className='applicationTitle' title='Applications'>
+                    Applications :
+                  </h4>{" "}
                   <p className='applicationSubTitle'>
                     {productDesc.applications}
                   </p>
@@ -194,7 +221,9 @@ const Products = () => {
               )}
               {productDesc && productDesc.quantity && (
                 <div className='quantity'>
-                  <h4 className='quantityTitle'>Quantity :</h4>{" "}
+                  <h4 className='quantityTitle' title='Quantity'>
+                    Quantity :
+                  </h4>{" "}
                   <p className='quantitySubTitle'>{productDesc.quantity}</p>
                 </div>
               )}
@@ -206,17 +235,23 @@ const Products = () => {
                   .filter((item) => item !== productDesc)
                   .map((item) => {
                     return (
-                      item.image && <div onClick={() => {setProductDesc(item);}}>
-                        <Card
-                        img={item.image}
-                        title={item.name}
-                        subTitle={item.category}
-                        height={"120px"}
-                        width={"70px"}
-                        type='grey'
-                        className='similarProduct'
-                      />
-                      </div>
+                      item.image && (
+                        <div
+                          onClick={() => {
+                            setProductDesc(item);
+                          }}
+                        >
+                          <Card
+                            img={item.image}
+                            title={item.name}
+                            subTitle={item.category}
+                            height={"120px"}
+                            width={"70px"}
+                            type='grey'
+                            className='similarProduct'
+                          />
+                        </div>
+                      )
                     );
                   })}
               </Slider>

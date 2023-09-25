@@ -8,7 +8,11 @@ const AboutUs = () => {
     <div className='aboutUs' id='about'>
       <Container>
         <div className='aboutUsSection'>
-          <div className='title'>About Us</div>
+          <div className='title'>
+            <h1 title="About Us">
+            About Us
+            </h1>
+          </div>
           <div className='subtitle'>
             <Fade bottom>
               <p>

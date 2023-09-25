@@ -1,79 +1,84 @@
-import mojitoMint from "../images/Mojito Mint 1 Lt.png";
-import mojitoMint750 from "../images/Mojito Mint 750ml.png";
-import curacao750 from "../images/Blue Curacao 750 ml.png";
-import curacao1 from "../images/Blue Curacao 1 Lt.png";
-import watermelon750 from "../images/Watermelon 750ml.png";
-import watermelon1 from "../images/Watermelon 1 Ltr_.png";
-import greenApple750 from "../images/green apple 750ml.png";
-import greenApple1 from "../images/green apple 1 Lt_.png";
-import greenMint750 from "../images/Green Mint 750ml.png";
-import greenMint1 from "../images/Green Mint 1 lt.png";
-import grenadine750 from "../images/Grenadine 750ml.png";
-import grenadine1 from "../images/Grenadine 1 lt_.png";
-import hazelnut1 from "../images/Hazelnut 1 Ltr_.png";
-import passionFruit750 from "../images/Passion Fruit 750ml.png";
-import passionFruit1 from "../images/Passion Fruit 1 Ltr_.png";
-import peach1 from "../images/Peach 1 Ltr.png";
-import bloodOrange750 from "../images/Blood Orange 750 ml.png";
-import bloodOrange1 from "../images/Blood Orange 1 Lt_.png";
-import pineapple1 from "../images/Pineapple 1 Ltr_.png";
-import strawberry750 from "../images/Strwaberry 750 ml.png";
-import strawberry1 from "../images/Strwaberry 1Lt_.png";
-import litchi1 from "../images/Lichi 1 Ltr.'.png";
-import fruitBier1 from "../images/Frucht Bier 1 Ltr_.png";
-import strawberryCrush from "../images/StrawberryCrush.png";
-import pineappleCrush from "../images/PineappleCrush.png";
-import butterscotchCrush from "../images/ButterscotchCrush.png";
-import mangoCrush from "../images/MangoCrush.png";
-import kiwiCrush from "../images/KiwiCrush.png";
-import orangeCrush from "../images/OrangeCrush.png";
-import mixFruitCrush from "../images/MixFruitCrush.png";
-import blackCurrantCrush from "../images/BlackCurrantCrush.png";
-import shahiPaanCrush from "../images/ShahiPaanCrush.png";
-import greenChilli1 from "../images/GreenChilli1.png";
-import greenChilli5 from "../images/GreenChilli5Ltr.png";
-import redChilli1 from "../images/RedChilli1.png";
-import redChilli5 from "../images/RedChilli5Ltr.png";
-import soya1 from "../images/Soya1Ltr.png";
-import soya5 from "../images/Soya5Ltr.png";
-import tomato5 from "../images/TomatoKetchup5Ltr.png";
-import vinegar1 from "../images/Vinegar1Ltr.png";
-import vinegar5 from "../images/Vinegar0.5.png";
-import ginger from "../images/Ginger Paste.png";
-import garlic from "../images/Garlic Paste.png";
-import chocolate from "../images/ChocolateDressing.png";
-import litchiCrush from "../images/Litchi crush-1Ltr.png";
+import mojitoMint from "../images/Mojito Mint 1 Lt.webp";
+import mojitoMint750 from "../images/Mojito Mint 750ml.webp";
+import curacao750 from "../images/Blue Curacao 750 ml.webp";
+import curacao1 from "../images/Blue Curacao 1 Lt.webp";
+import watermelon750 from "../images/Watermelon 750ml.webp";
+import watermelon1 from "../images/Watermelon 1 Ltr_.webp";
+import greenApple750 from "../images/green apple 750ml.webp";
+import greenApple1 from "../images/green apple 1 Lt_.webp";
+import greenMint750 from "../images/Green Mint 750ml.webp";
+import greenMint1 from "../images/Green Mint 1 lt.webp";
+import grenadine750 from "../images/Grenadine 750ml.webp";
+import grenadine1 from "../images/Grenadine 1 lt_.webp";
+import hazelnut1 from "../images/Hazelnut 1 Ltr_.webp";
+import passionFruit750 from "../images/Passion Fruit 750ml.webp";
+import passionFruit1 from "../images/Passion Fruit 1 Ltr_.webp";
+import peach1 from "../images/Peach 1 Ltr.webp";
+import bloodOrange750 from "../images/Blood Orange 750 ml.webp";
+import bloodOrange1 from "../images/Blood Orange 1 Lt_.webp";
+import pineapple1 from "../images/Pineapple 1 Ltr_.webp";
+import strawberry750 from "../images/Strwaberry 750 ml.webp";
+import strawberry1 from "../images/Strwaberry 1Lt_.webp";
+import litchi1 from "../images/Lichi 1 Ltr.'.webp";
+import fruitBier1 from "../images/Frucht Bier 1 Ltr_.webp";
+import strawberryCrush from "../images/StrawberryCrush.webp";
+import pineappleCrush from "../images/PineappleCrush.webp";
+import butterscotchCrush from "../images/ButterscotchCrush.webp";
+import mangoCrush from "../images/MangoCrush.webp";
+import kiwiCrush from "../images/KiwiCrush.webp";
+import orangeCrush from "../images/OrangeCrush.webp";
+import mixFruitCrush from "../images/MixFruitCrush.webp";
+import blackCurrantCrush from "../images/BlackCurrantCrush.webp";
+import shahiPaanCrush from "../images/ShahiPaanCrush.webp";
+import greenChilli1 from "../images/GreenChilli1.webp";
+import greenChilli5 from "../images/GreenChilli5Ltr.webp";
+import redChilli1 from "../images/RedChilli1.webp";
+import redChilli5 from "../images/RedChilli5Ltr.webp";
+import soya1 from "../images/Soya1Ltr.webp";
+import soya5 from "../images/Soya5Ltr.webp";
+import tomato5 from "../images/TomatoKetchup5Ltr.webp";
+import vinegar1 from "../images/Vinegar1Ltr.webp";
+import vinegar5 from "../images/Vinegar0.5.webp";
+import ginger from "../images/Ginger Paste.webp";
+import garlic from "../images/Garlic Paste.webp";
+import chocolate from "../images/ChocolateDressing.webp";
+import litchiCrush from "../images/Litchi crush-1Ltr.webp";
 import MocktailGroup from "../images/AboutUsGroup.svg";
-import CrushGroup from "../images/Carousel2.png";
-import SaucesGroup from "../images/SaucesGroup.png";
-import SquashGroup from "../images/Squash.png";
-import CulinaryGroup from "../images/CulinaryGroup.png";
-import RoseSharbat from "../images/RoseSharbat.png";
-import AamPanna from "../images/AamPannaSquash.png";
-import LemonSquash from "../images/LemonSquash.png";
-import OrangeSquash from "../images/OrangeSquash.png";
-import ChatpataJeera from "../images/ChatpataJeeraSquash.png";
+import CrushGroup from "../images/Carousel2.webp";
+import SaucesGroup from "../images/SaucesGroup.webp";
+import SquashGroup from "../images/Squash.webp";
+import CulinaryGroup from "../images/CulinaryGroup.webp";
+import RoseSharbat from "../images/RoseSharbat.webp";
+import AamPanna from "../images/AamPannaSquash.webp";
+import LemonSquash from "../images/LemonSquash.webp";
+import OrangeSquash from "../images/OrangeSquash.webp";
+import ChatpataJeera from "../images/ChatpataJeeraSquash.webp";
 
 export const CategoryList = [
   {
     name: "Bar-Syrup/Mocktail",
     image: [MocktailGroup],
+    products: 'We offer Mojito Mint, Blue Curacao, Watermelon, Green Apple, Green mint, Grenadine, Hazelnut, Peach and many more.'
   },
   {
     name: "Fruit Crushes",
     image: [CrushGroup],
+    products: 'We offer Strawberry crush, Pineapple Crush, Butterscotch Crush, Fruit Crushes, Mango Crush, Kiwi Crush and many more.'
   },
   {
     name: "Sauces",
     image: [SaucesGroup],
+    products: 'We offer Green Chilli Sauce, Red Chilli Sauce, Dark Soya Sauce, Tomato Ketchup and Vinegar'
   },
   {
     name: "Sharbat & Squash",
     image: [SquashGroup],
+    products: 'We offer Rose Sharbat, Aam Panna, Lemon Squash, Khatta Meetha Orange and Chatpata Jeera'
   },
   {
     name: "Culinary Paste",
     image: [CulinaryGroup],
+    products: 'We offer Ginger Paste and Garlic Paste'
   },
 ];
 export const ProductList = [

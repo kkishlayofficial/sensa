@@ -8,7 +8,11 @@ import { HashLink as Link } from "react-router-hash-link";
 const Categories = () => {
   return (
     <div className='categories' id='categories'>
-      <div className='title'>Categories</div>
+      <div className='title'>
+        <h1 title="Categories">
+        Categories
+        </h1>
+      </div>
       <div className='categoryList'>
         {CategoryList.map((item, idx) => {
           return (

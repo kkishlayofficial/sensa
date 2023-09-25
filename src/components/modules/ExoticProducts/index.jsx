@@ -98,7 +98,11 @@ const ExoticProducts = () => {
     <div className='exotic-products' id='exotic-products'>
       <Container>
         <div className='exotic-products-section'>
-          <div className='title'>Exotic Products</div>
+          <div className='title'>
+            <h1 title="Exotic Products">
+            Exotic Products
+            </h1>
+          </div>
           <div className='products-list'>
             <Slider {...settings}>
               {ProductList.filter((item) => item.exotic)

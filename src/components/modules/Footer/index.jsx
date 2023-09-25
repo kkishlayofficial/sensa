@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../../images/logo.png";
+import logo from "../../../images/logo.webp";
 import { AiOutlineMail } from "react-icons/ai";
 import { BiPhoneCall } from "react-icons/bi";
 import { CategoryList } from "../../../data";
