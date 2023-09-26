@@ -58,26 +58,31 @@ export const CategoryList = [
   {
     name: "Bar-Syrup/Mocktail",
     image: [MocktailGroup],
+    title: 'Mocktails',
     products: 'We offer Mojito Mint, Blue Curacao, Watermelon, Green Apple, Green mint, Grenadine, Hazelnut, Peach and many more.'
   },
   {
     name: "Fruit Crushes",
     image: [CrushGroup],
+    title: 'Crushes',
     products: 'We offer Strawberry crush, Pineapple Crush, Butterscotch Crush, Fruit Crushes, Mango Crush, Kiwi Crush and many more.'
   },
   {
     name: "Sauces",
     image: [SaucesGroup],
+    title: 'Sauces',
     products: 'We offer Green Chilli Sauce, Red Chilli Sauce, Dark Soya Sauce, Tomato Ketchup and Vinegar'
   },
   {
     name: "Sharbat & Squash",
     image: [SquashGroup],
+    title: 'Squash',
     products: 'We offer Rose Sharbat, Aam Panna, Lemon Squash, Khatta Meetha Orange and Chatpata Jeera'
   },
   {
     name: "Culinary Paste",
     image: [CulinaryGroup],
+    title: 'Paste',
     products: 'We offer Ginger Paste and Garlic Paste'
   },
 ];

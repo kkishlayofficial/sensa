@@ -32,7 +32,9 @@ const Navbar = () => {
             </Link>
           </li>
           <li className='nav-item'>
-            <Link to='/products?category=All' onClick={closeMenu}>
+            <Link to='/products?category=All' onClick={closeMenu} spy={true}
+              smooth={true}
+              scroll={scrollWithOffset}>
               Products
             </Link>
           </li>

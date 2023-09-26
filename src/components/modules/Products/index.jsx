@@ -11,6 +11,7 @@ import { Fade } from "react-reveal";
 import Slider from "react-slick";
 import { SampleNextArrow, SamplePrevArrow } from "../../elements/ArrowButton";
 import { Helmet } from "react-helmet";
+import ReactGA from 'react-ga';
 
 const Products = () => {
   const location = useLocation();
@@ -33,9 +34,15 @@ const Products = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
     setFilteredCategory(queryParameters.category);
+    ReactGA.pageview(window.location.pathname)
   }, [queryParameters]);
 
   const handleFilterChange = (category) => {
+    ReactGA.event({
+      category: filteredCategory,
+      action: 'Filter Changed',
+      label: filteredCategory,
+    })
     setFilteredCategory(category);
     updateCategory(category);
   };
@@ -102,10 +109,14 @@ const Products = () => {
   };
 
   const [content, setContent] = useState("");
+  const [title, setTitle] = useState("");
 
   useEffect(() => {
     CategoryList.map((item) => {
-      if (item.name === filteredCategory) setContent(item.products);
+      if (item.name === filteredCategory) {
+        setContent(item.products)
+        setTitle(item.title)
+      };
     });
   }, [filteredCategory]);
 
@@ -113,7 +124,7 @@ const Products = () => {
     <div>
       <Helmet>
         <title>{`Sensa-${
-          filteredCategory === "All" ? "All Products" : filteredCategory
+          filteredCategory === "All" ? "All Products" : title
         }`}</title>
         <meta name='description' content={content} />
         <meta name='keyword' content={content} />
@@ -228,7 +239,7 @@ const Products = () => {
                 </div>
               )}
             </div>
-            <div className='similarProducts'>
+            {filteredItems.length>2 && <div className='similarProducts'>
               <Slider {...settings}>
                 {filteredItems
                   .filter((item) => item.category === productDesc.category)
@@ -255,7 +266,7 @@ const Products = () => {
                     );
                   })}
               </Slider>
-            </div>
+            </div>}
           </ModalBody>
         </Modal>
       </div>
