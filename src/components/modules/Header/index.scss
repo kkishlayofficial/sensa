@@ -14,7 +14,7 @@
 
     @for $i from 0 through 3 {
       &.item#{$i} {
-        height: 450px;
+        height: 550px;
 
         @media screen and (min-width: 426px) and (max-width: 768px) {
           height: 300px;

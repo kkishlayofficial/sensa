@@ -15,6 +15,31 @@ const Header = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     swipeToSlide: true,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          dots: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 425,
+        settings: {
+          dots: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   const altItems = ["All", "Bar-Syrup%2FMocktail", "Fruit Crushes", "Sauces"];
