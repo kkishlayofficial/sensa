@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./index.scss";
 
-const ReviewForm = ({ onSubmit }) => {
+const ReviewForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -77,7 +77,7 @@ const ReviewForm = ({ onSubmit }) => {
         <input
           type='hidden'
           name='_next'
-          value='https://sensafood.netlify.app'
+          value='https://sensafoods.co.in'
         ></input>
         <button type='submit'>Submit</button>
       </form>
