@@ -32,6 +32,7 @@ const ReviewForm = () => {
         action='https://formsubmit.co/kishlay111197@gmail.com'
         onSubmit={handleSubmit}
         method='POST'
+        netlify
       >
         <div className='form-group'>
           <label>

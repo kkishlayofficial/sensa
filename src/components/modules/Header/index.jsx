@@ -42,7 +42,7 @@ const Header = () => {
     ],
   };
 
-  const altItems = ["All", "Bar-Syrup%2FMocktail", "Fruit Crushes", "Sauces"];
+  const altItems = ["All", "Bar-Syrup and Mocktail", "Fruit Crushes", "Sauces"];
 
   return (
     <div className='hero-section-carousel'>
